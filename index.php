@@ -29,6 +29,12 @@ if(isset($_SESSION['rolLogueado'])){
 
 <!--Boton qaAAAAAAAA-->
 <!-- hOLA -->
+<!-- hOLA -->
+<!-- hOLA -->
+<!-- hOLA -->
+<!-- hOLA -->
+<!-- hOLA -->
+<!-- hOLA -->
 <div class="fixed-action-btn">
 	<a class="btn-floating btn-large red Sesion">
 		<i class="large material-icons">person_pin</i>
