@@ -1,0 +1,52 @@
+.input-field input:focus{
+	border-bottom: 1px solid  #fc7323 !important;
+	box-shadow: 0 1px 0 0  #fc7323 !important;
+
+}
+
+.input-field textarea:focus{
+	border-bottom: 1px solid  #fc7323 !important;
+	box-shadow: 0 1px 0 0  #fc7323 !important;
+
+}
+
+.file-path-wrapper input:active{
+	border-bottom: 1px solid  #fc7323 !important;
+	box-shadow: 0 1px 0 0  #fc7323 !important;
+}
+
+.center {
+     vertical-align: middle;
+}
+
+.page-footer{
+	background-color:#238276 !important;
+	font-family: verdana;
+
+} 
+
+.row{
+	font-family: verdana;
+}
+
+.valing-center{
+	font-family: verdana;
+}
+
+i.icon-black {
+    color: black;
+}
+
+
+.footer-copyright{
+	background-color: #00796b !important;
+}
+
+
+
+.btn-Enviar{
+	background-color: #fc7323; 
+	color: black; 
+	font-weight: bold;
+}
+

@@ -1,0 +1,17 @@
+table{
+	text-align: center;
+	border:1px solid #000;
+	font-family: verdana;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table tbody tr td{
+	border:1px solid #000;
+}
+
+table thead tr th{
+	border:1px solid #000;
+	background: #fc7323;
+	color: #fff;
+}

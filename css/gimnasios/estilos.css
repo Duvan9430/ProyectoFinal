@@ -1,0 +1,153 @@
+body{
+	font-family: verdana;
+	
+}
+
+#imagenPrinc{
+  position: absolute; 
+  display: inline-block;
+  width: 25%;
+  height: 48%;
+  right: 4%; 
+  top: 35%; 
+}
+
+#texto{
+  margin-left: 3%;
+}
+
+.centrar{
+	margin:auto; 
+	padding-top:1%; 
+	padding-left:-1%; 
+}
+
+.logo{
+	width: 80px;
+	height: 80px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.input-field input:focus{
+	border-bottom: 1px solid  #fc7323 !important;
+	box-shadow: 0 1px 0 0  #fc7323 !important;
+
+}
+
+.input-field .prefix.active{
+	color:  #fc7323 !important;
+}
+
+.center {
+     vertical-align: middle;
+}
+
+.page-footer{
+	background-color:#238276 !important;
+	font-family: verdana;
+
+} 
+
+.row{
+	font-family: verdana;
+}
+
+.valing-center{
+	font-family: verdana;
+}
+
+i.icon-black {
+    color: black;
+}
+
+
+
+.banner{
+	background-color: !important;
+}
+
+html,body{
+	height:100%;
+}
+
+/*Barra Navegacion*/
+nav .categories-wrapper {
+ background-color: #238276;
+ height: 64px;
+}
+
+nav .categories-wrapper .categories-container {
+ background-color: inherit;
+ white-space: nowrap;
+ overflow: auto;
+ z-index: 500;
+}
+
+nav .categories-wrapper .categories-container.pinned {
+ width: 100%;
+ box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav .categories-wrapper .categories-container .categories > li{
+ float: none;
+ display: inline-block;
+}
+
+.footer-copyright{
+	background-color: #004d40 !important;;
+}
+
+
+.footer-copyright{
+	background-color: #00796b !important;
+}
+@media screen and (max-width:1024px) and (min-width:640px) {
+    .float-button{
+      position: absolute; 
+      display: inline-block; 
+      right: 15%; 
+      top: 50%; 
+      z-index:100;
+    }
+}
+@media screen and (min-width:1024px) {
+    .float-button{
+      position: absolute; 
+      display: inline-block; 
+      right: 11%; 
+      top: 16%; 
+      z-index:100;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:640px) {
+    .float-button{
+    	position: absolute; 
+    	display: inline-block; 
+      	right: 1%; 
+      	top: 2%; 
+    	z-index:100;
+    }
+}
+@media screen and (min-width:1024px) {
+    .float-button{
+    	position: absolute; 
+    	display: inline-block; 
+    	right: 1%; 
+    	top: 2%; 
+    	z-index:100;
+    }
+}
+
+
+.btn-principal:hover{
+  background-color:  #fc7323!important;
+}
+
+.btn-sub{
+  background-color: #238276 !important;
+}
+
+.btn-sub:hover{
+  background-color: #fc7323 !important;
+}

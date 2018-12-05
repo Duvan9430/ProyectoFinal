@@ -1,0 +1,34 @@
+<?php 
+	require_once "../../modelo/Conexion.php";
+	require_once "../../entidad/Rutinas/IngresoGimnasioE.php";
+	require_once "../../modelo/Rutinas/IngresoGimnasioM.php";
+
+	error_reporting(1);
+
+	$retorno = array('array' => null, 'estado' => null, 'mensaje' => null,);
+
+	$entRegistro = new RegistroGimnasioE();
+	$entRegistro->setPerNit($_POST['perNit']); //$_POST['perNit']
+	//$entRegistro->setIdAprendiz('1');
+	$mdlPersona = new IngresoGimnasioM();
+	$aprendiz = $mdlPersona->ConsultarPersona($entRegistro);
+	$id = $aprendiz->datos->idAprendiz;
+	//echo $id;
+	if(empty($id)){
+		$retorno['mensaje'] = "Persona inexistente.";
+		//echo json_encode($retorno);
+	}else{
+		$entRegistro->setIdAprendiz($id);
+		$resultado = $mdlPersona->InsertarAsistencia($entRegistro);
+		$retorno['array'] = $resultado->datos;
+		$retorno['estado'] = $resultado->estado;
+		$retorno['mensaje'] = $resultado->mensaje;
+		//echo json_encode($retorno);
+	}
+	// $resultado2 = $mdlPersona->ConsultarExistencia();
+	// $resultado = $mdlPersona->InsertarAsistencia($entRegistro);
+	unset($entRegistro);
+	unset($mdlPersona);	
+
+	echo json_encode($retorno);
+ ?>

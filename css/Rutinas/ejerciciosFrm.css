@@ -1,0 +1,46 @@
+.centrar{
+	margin:auto; 
+	padding-top:1%; 
+	padding-left:-1%; 
+}
+
+.input-field input:focus{
+	border-bottom: 1px solid  #fc7323 !important;
+	box-shadow: 0 1px 0 0  #fc7323 !important;
+
+}
+
+.input-field .prefix.active{
+	color:  #fc7323 !important;
+}
+
+.center {
+     vertical-align: middle;
+}
+
+.page-footer{
+	background-color:#238276 !important;
+	font-family: verdana;
+
+} 
+
+.row{
+	font-family: verdana;
+}
+
+.valing-center{
+	font-family: verdana;
+}
+
+
+.btn-principal:hover{
+  background-color:  #fc7323!important;
+}
+
+.btn-sub{
+  background-color: #238276 !important;
+}
+
+.btn-sub:hover{
+  background-color: #fc7323 !important;
+}

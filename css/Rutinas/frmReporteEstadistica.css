@@ -1,0 +1,94 @@
+hr{
+	border-color: #fc7323;
+
+}
+.input-field input:focus{
+	border-bottom: 1px solid  #fc7323 !important;
+	box-shadow: 0 1px 0 0  #fc7323 !important;
+
+}
+
+.input-field .prefix.active{
+	color:  #fc7323 !important;
+}
+
+.center {
+     vertical-align: middle;
+}
+
+.page-footer{
+	background-color:#238276 !important;
+	font-family: verdana;
+
+} 
+
+.row{
+	font-family: verdana;
+}
+
+.valing-center{
+	font-family: verdana;
+}
+
+i.icon-black {
+    color: black;
+}
+
+@media screen and (max-width:1024px) and (min-width:640px) {
+    .float-button{
+    	position: absolute; 
+    	display: inline-block; 
+    	right: 15%; 
+    	top: 50%; 
+    	z-index:100;
+    }
+}
+@media screen and (min-width:1024px) {
+    .float-button{
+    	position: absolute; 
+    	display: inline-block; 
+    	right: 15%; 
+    	top: 50%; 
+    	z-index:100;
+    }
+}
+
+.btn-principal{
+  background-color: #fc7323 !important;
+}
+
+.btn-principal:hover{
+  background-color:  #fc7323!important;
+}
+
+.btn-sub{
+  background-color: #238276 !important;
+}
+
+.btn-sub:hover{
+  background-color: #fc7323 !important;
+}
+
+/*Secciones Control Rutina */
+.tabs .tab a{
+   color:#000;
+} /*Black color to the text*/
+
+.tabs .indicator {
+   background-color:#fc7323;
+} 
+
+.tabs .tab a:hover {
+   background-color:#ffcc80 !important;
+   color:#000 !important;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+   background-color:white !important;
+   color:#fc7323 !important;
+} /*Background and text color when a tab is active*/
+
+span{
+  color: #238276 !important; 
+  font-family: verdana;
+}

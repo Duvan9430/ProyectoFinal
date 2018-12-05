@@ -1,0 +1,10 @@
+#header{
+	font-family: Verdana, Geneva, sans-serif;
+	
+		margin: auto;
+		background: #238276;
+		padding: 9px 27.1%;
+		box-sizing: border-box;
+		margin-top:20px;
+		border-radius: 7px;		
+}
