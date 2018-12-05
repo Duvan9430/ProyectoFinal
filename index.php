@@ -27,8 +27,7 @@ if(isset($_SESSION['rolLogueado'])){
 </head>
 <body class=" grey lighten-5">
 
-<!--Boton qaAAAAAAAA-->
-<!-- hOLA -->
+<!--Boton-->
 <div class="fixed-action-btn">
 	<a class="btn-floating btn-large red Sesion">
 		<i class="large material-icons">person_pin</i>
@@ -67,7 +66,20 @@ if(isset($_SESSION['rolLogueado'])){
   </div>
 </div>
 
-   <!--Carousel-->
+<!--Header-->
+	<header>
+    	<a href="http://oferta.senasofiaplus.edu.co/" target="_blank"><img src="Img/logoSena.png" class="logo left"></a>
+		<img src="Img/Logo2.png" href="#!" class="logo2 right">
+	</header>
+
+
+  <nav>
+    <div class="nav-wrapper teal darken-3">
+      <a href="#!" class="brand-logo center orange-text"><b></b></a>
+    </div>
+  </nav>
+  
+  <!--Carousel-->
    <div class="slider">
     <ul class="slides">
       <li>
@@ -109,27 +121,7 @@ if(isset($_SESSION['rolLogueado'])){
       </li>
     </ul>
   </div>
-  <!-- navbar -->
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#!"><i class="material-icons left">home</i>Inicio</a></li>
-    <li><a href="#!"><i class="material-icons left">fitness_center</i>Gimnasios</a></li>
-    <li><a href="#!"><i class="material-icons left">public</i>Torneos</a></li>
-    <li><a href="#!"><i class="material-icons left">info_outline</i>Contáctenos</a></li>
-    <li><a href="#!"><i class="material-icons left">people</i>Iniciar sesión</a></li>
-  </ul>
-  <nav>
-    <div class="nav-wrapper teal darken-3">
-      <a href="#!" class="brand-logo white-text"><img src="Img/Logo2.png"/><b>Energic Body Gym</b></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#!"><i class="material-icons left">home</i>Inicio</a></li>
-        <li><a href="#!"><i class="material-icons left">fitness_center</i>Gimnasios</a></li>
-        <li><a href="#!"><i class="material-icons left">public</i>Torneos</a></li>
-        <li><a href="#!"><i class="material-icons left">info_outline</i>Contáctenos</a></li>
-        <li><a href="#!"><i class="material-icons left">people</i>Iniciar sesión</a></li>
-      </ul>
-    </div>
-  </nav>
+  <br>
 
 <!--Novedades-->
 <div class="container section">

@@ -8,9 +8,7 @@ header{
 i.icon-teal {
     color: teal;
 }
-.nav-wrapper .brand-logo img {
-  height: 60px;
-}
+
 .modal-close{
   position: absolute;
   top:10px;

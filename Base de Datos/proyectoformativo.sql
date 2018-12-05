@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-12-2018 a las 15:58:45
--- Versión del servidor: 10.1.36-MariaDB
--- Versión de PHP: 7.2.10
+-- Tiempo de generación: 05-12-2018 a las 17:19:05
+-- Versión del servidor: 10.1.34-MariaDB
+-- Versión de PHP: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `proyectoformativo`
 --
+CREATE DATABASE IF NOT EXISTS `proyectoformativo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
+USE `proyectoformativo`;
 
 -- --------------------------------------------------------
 
@@ -510,7 +512,13 @@ CREATE TABLE `equipo` (
 --
 
 INSERT INTO `equipo` (`idEquipo`, `idTorneo`, `equNombre`, `estado`, `fechaCreacion`, `fechaModificacion`, `usuarioCreacion`, `usuarioModificacion`) VALUES
-(1, 2, 'Las poderosas', 'A', '2018-12-03 00:00:00', '2018-12-03 00:00:00', 1, 1);
+(1, 2, 'Las pode', 'A', '2018-12-04 07:27:13', '2018-12-04 07:27:13', 1, 1),
+(2, 2, 'mmm', 'I', '2018-12-04 07:19:55', '2018-12-04 07:19:55', -1, -1),
+(3, 2, 'mmm', 'I', '2018-12-04 07:19:55', '2018-12-04 07:19:55', -1, -1),
+(4, 2, 'PRUEBA2', 'A', '2018-12-04 07:20:20', '2018-12-04 07:20:20', -1, -1),
+(5, 2, 'PRUEBA2', 'A', '2018-12-04 07:20:20', '2018-12-04 07:20:20', -1, -1),
+(6, 2, 'PRUEBA1', 'A', '2018-12-04 07:20:42', '2018-12-04 07:20:42', -1, -1),
+(7, 2, 'BIENJACH', 'A', '2018-12-04 07:21:35', '2018-12-04 07:21:35', -1, -1);
 
 -- --------------------------------------------------------
 
@@ -1913,10 +1921,12 @@ INSERT INTO `musculo` (`idMusculo`, `idClasificacionMusculo`, `musNombre`, `esta
 (2, 1, 'Triceps', 'A', '2018-11-14 14:58:21', '2018-11-14 14:58:21', -1, -1),
 (5, 1, 'Pectoral superior', 'A', '2018-11-14 15:05:37', '2018-11-14 15:05:37', -1, -1),
 (11, 1, 'Pectoral inferior', 'A', '2018-11-14 15:12:08', '2018-11-14 15:12:08', -1, -1),
-(12, 3, 'Gluteo', 'A', '2018-11-15 09:24:52', '2018-11-15 09:24:52', -1, -1),
-(13, 3, 'Muslos', 'A', '2018-11-15 09:25:40', '2018-11-15 09:25:40', -1, -1),
+(12, 3, 'Gluteo', 'I', '2018-11-15 09:24:52', '2018-11-15 09:24:52', -1, -1),
+(13, 3, 'Muslos', 'I', '2018-11-15 09:25:40', '2018-11-15 09:25:40', -1, -1),
 (14, 1, 'Bíceps', 'A', '2018-11-15 10:14:54', '2018-11-15 10:14:54', -1, -1),
-(15, 2, 'Abdominales', 'A', '2018-11-15 11:05:18', '2018-11-15 11:05:18', -1, -1);
+(15, 2, 'Abdominales', 'A', '2018-11-15 11:05:18', '2018-11-15 11:05:18', -1, -1),
+(16, 2, 'Torax', 'A', '2018-12-05 06:24:56', '2018-12-05 06:24:56', -1, -1),
+(17, 3, 'Muslo', 'A', '2018-12-05 07:32:57', '2018-12-05 07:32:57', -1, -1);
 
 -- --------------------------------------------------------
 
@@ -1958,6 +1968,18 @@ CREATE TABLE `participante` (
   `usuarioModificacion` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `participante`
+--
+
+INSERT INTO `participante` (`idParticipante`, `idAprendiz`, `idEquipo`, `estado`, `fechaCreacion`, `fechaModificacion`, `usuarioCreacion`, `usuarioModificacion`) VALUES
+(1, 6, 1, 'A', '2018-12-04 07:18:16', '2018-12-04 07:18:16', -1, -1),
+(2, 9, 4, 'A', '2018-12-04 07:30:21', '2018-12-04 07:30:21', -1, -1),
+(3, 9, 4, 'A', '2018-12-04 07:30:21', '2018-12-04 07:30:21', -1, -1),
+(4, 2, 4, 'A', '2018-12-04 07:31:17', '2018-12-04 07:31:17', -1, -1),
+(5, 9, 1, 'A', '2018-12-05 07:17:16', '2018-12-05 07:17:16', -1, -1),
+(6, 3, 1, 'A', '2018-12-05 07:18:28', '2018-12-05 07:18:28', -1, -1);
+
 -- --------------------------------------------------------
 
 --
@@ -1975,9 +1997,9 @@ CREATE TABLE `persona` (
   `idEps` int(11) NOT NULL,
   `idRegimen` int(11) NOT NULL,
   `perNit` varchar(15) NOT NULL,
-  `perPrimerNombre` varchar(50) NOT NULL,
+  `perPrimerNombre` varchar(50) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
   `perSegundoNombre` varchar(50) DEFAULT NULL,
-  `perPrimerApellido` varchar(50) NOT NULL,
+  `perPrimerApellido` varchar(50) CHARACTER SET latin1 NOT NULL,
   `perSegundoApellido` varchar(50) DEFAULT NULL,
   `perFechaNacimiento` date NOT NULL,
   `perTelefono` varchar(20) DEFAULT NULL,
@@ -1998,27 +2020,27 @@ CREATE TABLE `persona` (
 
 INSERT INTO `persona` (`idPersona`, `idMunicipioNacimiento`, `idMunicipioResidencia`, `idTipoDocumento`, `idGrupoSanguineo`, `idGenero`, `idSede`, `idEps`, `idRegimen`, `perNit`, `perPrimerNombre`, `perSegundoNombre`, `perPrimerApellido`, `perSegundoApellido`, `perFechaNacimiento`, `perTelefono`, `perCelular`, `perCorreoElectronico`, `perDireccion`, `perFoto`, `estado`, `fechaCreacion`, `fechaModificacion`, `usuarioCreacion`, `usuarioModificacion`) VALUES
 (1, 613, 613, 1, 1, 1, 1, 15, 1, '1075222635', 'Yenner', 'Alberto', 'Suarez', 'Murillo', '1999-06-21', NULL, '3213049684', 'yasuarez536@misena.edu.co', 'calle 8 #32-20', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
-(2, 613, 613, 1, 1, 2, 1, 12, 1, '1075318495', 'Mar?a', 'Valentina', 'Zapata', 'Herrera', '1999-05-24', NULL, '3506762186', 'mvzapata0@misena.edu.co', 'calle 3 # 27-39', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
+(2, 613, 613, 1, 1, 2, 1, 12, 1, '1075318495', 'MarÃ­a', 'Valentina', 'Zapata', 'Herrera', '1999-05-24', NULL, '3506762186', 'mvzapata0@misena.edu.co', 'calle 3 # 27-39', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (3, 111, 613, 1, 3, 1, 1, 13, 4, '1001277248', 'Luigui', 'David', 'Ramirez', 'Ramirez', '2000-02-09', NULL, '3106664525', 'ldramirez842@misena.edu.co', 'cra 31A #G-34', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (4, 159, 159, 1, 3, 2, 1, 15, 4, '1079187124', 'Karen ', 'yulieth', 'Alvarez', 'Ferreira', '1999-08-18', NULL, '3152078452', 'kyalvarez09@misena.edu.co', 'calle 7 # 10A-03', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (5, 613, 613, 1, 3, 1, 1, 3, 4, '1075303895', 'David', NULL, 'Corredor', 'Tamayo', '1997-05-01', NULL, '3184939634', 'dcorredor59@misena.edu.co', 'calle 66 #1D34', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
-(6, 442, 613, 1, 1, 2, 1, 15, 1, '1004491130', 'Laura', 'Yisela', 'Cede?o', 'Andrade', '1999-12-06', NULL, '3143219894', 'lycedeno@misena.edu.co', 'N-A', '', 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
-(7, 998, 998, 1, 1, 1, 1, 15, 1, '1082806433', 'Juan', 'pablo', 'Ver?', 'Perdomo', '1996-12-30', NULL, '3209106057', 'jp74@misena.edu.co', 'Tello Barrio Centro', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
-(8, 653, 653, 1, 1, 2, 1, 15, 1, '1004156838', 'M?nica', 'Alexandra', 'Celis', 'Garc?a', '1999-05-12', NULL, '3144684653', 'macelis83@misena.edu.co', 'calle 27 # 17-52', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
+(6, 442, 613, 1, 1, 2, 1, 15, 1, '1004491130', 'Laura', 'Yisela', 'CedeÃ±o', 'Andrade', '1999-12-06', NULL, '3143219894', 'lycedeno@misena.edu.co', 'N-A', '', 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
+(7, 998, 998, 1, 1, 1, 1, 15, 1, '1082806433', 'Juan', 'pablo', 'VerÃ¹', 'Perdomo', '1996-12-30', NULL, '3209106057', 'jp74@misena.edu.co', 'Tello Barrio Centro', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
+(8, 653, 653, 1, 1, 2, 1, 15, 1, '1004156838', 'MÃ³nica', 'Alexandra', 'Celis', 'García', '1999-05-12', NULL, '3144684653', 'macelis83@misena.edu.co', 'calle 27 # 17-52', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (9, 267, 613, 1, 3, 1, 1, 14, 4, '1010095911', 'Jhon', 'Jairo', 'Sanchez', 'Fajardo', '2000-04-15', NULL, '3138538761', 'jjsanchez11@misena.edu.co', 'Calle 78 #2W64', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
-(10, 435, 613, 1, 4, 2, 1, 15, 1, '1075314099', 'Eliana', 'Lissett', 'Pe?a', 'Losada', '1998-09-06', NULL, '3112385721', 'elpena99@misena.edu.co', 'calle 2 B # 34-34', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
+(10, 435, 613, 1, 4, 2, 1, 15, 1, '1075314099', 'Eliana', 'Lissett', 'PeÃ±a', 'Losada', '1998-09-06', NULL, '3112385721', 'elpena99@misena.edu.co', 'calle 2 B # 34-34', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (11, 613, 613, 1, 3, 1, 1, 3, 4, '1003813427', 'Duvan', 'Javier', 'Tovar', 'Valderrama', '2000-08-10', NULL, '3174167289', 'djtovar7@misena.edu.co', 'calle B sur #25', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (12, 159, 159, 1, 3, 2, 1, 13, 3, '1079186269', 'Maria', 'del Pilar', 'Perdomo', 'Rodriguez', '1998-09-26', NULL, '3024384152', 'mdperdomo59@misena.edu.co', 'cra 6 #20-49', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (13, 159, 159, 1, 1, 2, 1, 15, 4, '1079186913', 'Diana', 'Marcela', 'Barreiro', 'Fernandez', '1999-04-05', NULL, '3133327664', 'dmbareriro@misena.edu.co', 'calle 43 #14-46', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (14, 159, 159, 1, 1, 1, 1, 16, 1, '1007704871', 'Jhon', 'Stiven', 'Osorio', 'Burgos', '2000-07-31', NULL, '3022621753', 'jsosorio178@misena.edu.co', 'calle 24 #3-04', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
-(15, 442, 613, 1, 1, 2, 1, 3, 3, '1004491521', 'Mar?a ', 'Jos?', 'Carvajal', 'Polan?a', '2000-01-07', NULL, '3224089225', 'mjcarvajal1@misena.edu.co', 'calle 37 # 7 AW-10', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
+(15, 442, 613, 1, 1, 2, 1, 3, 3, '1004491521', 'MarÃ­a', 'José', 'Carvajal', 'Polanía', '2000-01-07', NULL, '3224089225', 'mjcarvajal1@misena.edu.co', 'calle 37 # 7 AW-10', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (16, 613, 613, 1, 7, 1, 1, 3, 3, '1082216957', 'Carlos', 'Daniel', 'Cerquera', 'Gaona', '1998-06-06', NULL, '3219081846', 'cdcerquera0@misena.edu.co', 'calle 37 #7 AW-10', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (17, 159, 159, 1, 3, 2, 1, 15, 4, '1079186347', 'Loren', 'Dayana', 'Cruz', 'Calderon', '1999-09-24', NULL, '3223801840', 'ldcruz49@misena.edu.co', 'N-A', '', 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (18, 159, 159, 1, 3, 1, 1, 3, 3, '1079186941', 'Santiago', NULL, 'Cuellar', 'Figueroa', '1999-06-14', NULL, '3187686533', 'scuellar14@misena.edu.co', 'calle 32 B #12-63', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (19, 613, 613, 1, 3, 1, 1, 3, 3, '1075321220', 'Pablo', 'Emilio', 'Escobar', 'Ossa', '1999-10-06', NULL, '3123863012', 'peescobar7@misena.edu.co', 'calle 3 A #11-28', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (20, 613, 613, 1, 5, 1, 1, 11, 4, '1075299979', 'Luis ', 'Alberto', 'Guarnizo', 'Valderrama', '1996-10-11', '8715877', '318776490', 'laguarnizo9@misena.edu.co', 'calle 34 #11-65', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
 (21, 613, 613, 1, 3, 1, 1, 15, 1, '1007465577', 'Juan', 'Camilo', 'Escobar', 'Conde', '2000-01-21', '8663023', '3209902823', 'jcescobar775@misena.edu.co', 'calle 71A # 24-23', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1),
-(22, 905, 613, 1, 1, 2, 1, 15, 2, '1010135781', 'Karen ', 'Yuliana', 'Palacio', 'Min?', '2000-07-26', NULL, '3103772493', 'kypalacio1@misena.edu.co', 'calle 77 #5-45', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1);
+(22, 905, 613, 1, 1, 2, 1, 15, 2, '1010135781', 'Karen ', 'Yuliana', 'Palacio', 'Minú', '2000-07-26', NULL, '3103772493', 'kypalacio1@misena.edu.co', 'calle 77 #5-45', NULL, 'A', '2018-10-17 11:11:00', '2018-10-17 11:11:00', -1, -1);
 
 -- --------------------------------------------------------
 
@@ -2446,7 +2468,9 @@ CREATE TABLE `torneo` (
 --
 
 INSERT INTO `torneo` (`idTorneo`, `idClasificacionTorneo`, `idDisciplina`, `idLugar`, `idGeneroTorneo`, `idEncargado`, `idTipoEliminatoria`, `torNumeroEquipos`, `torNombre`, `torFechaInicio`, `torFechaFin`, `estado`, `fechaCreacion`, `fechaModificacion`, `usuarioCreacion`, `usuarioModificacion`) VALUES
-(2, 1, 2, 1, 3, 9, 2, 2, 'Eliminatoria de basketball', '2018-12-01', '2018-12-07', 'A', '2018-12-03 00:00:00', '2018-12-03 00:00:00', 1, 1);
+(2, 1, 2, 1, 3, 9, 2, 2, 'Eliminatoria de basketball', '2018-12-01', '2018-12-07', 'A', '2018-12-03 00:00:00', '2018-12-03 00:00:00', 1, 1),
+(3, 1, 6, 1, 3, 12, 4, 5, 'Prueba', '2018-12-10', '2018-12-19', 'A', '2018-12-31 00:00:00', '2018-12-31 00:00:00', -1, 0),
+(4, 1, 6, 1, 3, 12, 4, 5, 'Prueba', '2018-12-10', '2018-12-19', 'I', '2018-12-31 00:00:00', '2018-12-31 00:00:00', -1, -1);
 
 -- --------------------------------------------------------
 
@@ -2523,8 +2547,8 @@ INSERT INTO `usuariorol` (`idUsuarioRol`, `idUsuario`, `idRol`, `estado`, `fecha
 (6, 6, 4, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
 (7, 7, 4, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
 (8, 8, 4, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
-(9, 9, 4, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
-(10, 10, 4, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
+(9, 9, 1, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
+(10, 10, 3, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
 (11, 11, 4, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
 (12, 12, 4, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
 (13, 13, 4, 'A', '2018-10-19 10:25:00', '2018-10-19 10:25:00', -1, -1),
@@ -3090,7 +3114,7 @@ ALTER TABLE `eps`
 -- AUTO_INCREMENT de la tabla `equipo`
 --
 ALTER TABLE `equipo`
-  MODIFY `idEquipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idEquipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `ficha`
@@ -3144,7 +3168,7 @@ ALTER TABLE `lugar`
 -- AUTO_INCREMENT de la tabla `maquina`
 --
 ALTER TABLE `maquina`
-  MODIFY `idMaquina` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idMaquina` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `maquinaejercicio`
@@ -3168,7 +3192,7 @@ ALTER TABLE `municipio`
 -- AUTO_INCREMENT de la tabla `musculo`
 --
 ALTER TABLE `musculo`
-  MODIFY `idMusculo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `idMusculo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `pais`
@@ -3180,7 +3204,7 @@ ALTER TABLE `pais`
 -- AUTO_INCREMENT de la tabla `participante`
 --
 ALTER TABLE `participante`
-  MODIFY `idParticipante` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idParticipante` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `persona`
@@ -3282,7 +3306,7 @@ ALTER TABLE `tipovaloracion`
 -- AUTO_INCREMENT de la tabla `torneo`
 --
 ALTER TABLE `torneo`
-  MODIFY `idTorneo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idTorneo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`

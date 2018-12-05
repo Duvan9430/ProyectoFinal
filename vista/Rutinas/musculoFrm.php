@@ -1,3 +1,4 @@
+<div class="formularioM">
   <link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.css">
   <link rel="stylesheet" type="text/css" href="../css/Rutinas/ejerciciosFrm.css">
   <!-- Contenido -->
@@ -73,5 +74,7 @@
       </article>
   </section>
   
+  
   <script type="text/javascript" src="../js/Librerias/materialize - copia.js"></script>
   <script type="text/javascript" src="../js/Rutinas/musculo.js"></script>
+</div>

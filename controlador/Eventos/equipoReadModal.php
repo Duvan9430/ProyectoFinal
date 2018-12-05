@@ -1,5 +1,5 @@
 <?php  
-	require_once'../../modelo/Eventos/conexion.php';
+	require_once'../../modelo/Conexion.php';
 	require_once '../../modelo/Eventos/equipoM.php';
 error_reporting(1);
 $retorno = array("mensaje",'equipo');

@@ -1,7 +1,7 @@
 <?php  
 require_once '../../entidad/Eventos/disciplinaE.php';
 require_once '../../modelo/Eventos/disciplinaM.php';
-require_once '../../modelo/Eventos/conexion.php';
+require_once '../../modelo/Conexion.php';
 
 $retorno = array('mensaje','arrayDisciplina');
 	$disciplinaE = new DisciplinaE();

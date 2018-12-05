@@ -1,6 +1,6 @@
 <?php  
 require_once '../../modelo/Eventos/torneoM.php';
-require_once '../../modelo/Eventos/conexion.php';
+require_once '../../modelo/Conexion.php';
 error_reporting(1);
 $retorno = array('mensaje','torneo');
 

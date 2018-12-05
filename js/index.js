@@ -1,18 +1,16 @@
 $(document).ready(function(){
-    $('.slider').slider({
-    	indicators: false
-    });
+    $('.slider').slider();
     $('.tooltipped').tooltip();
     $('.parallax').parallax();
 
     $('.carousel.carousel-slider').carousel({
       fullWidth: true,
-      indicators: false
+      indicators: true
     });
 
     $('.fixed-action-btn').floatingActionButton();
     $('.modal').modal();
 
-    M.AutoInit();
+
 
 });

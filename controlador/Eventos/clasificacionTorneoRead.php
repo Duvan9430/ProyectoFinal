@@ -1,7 +1,7 @@
 <?php  
 require_once '../../entidad/Eventos/clasificacionTorneoE.php';
 require_once '../../modelo/Eventos/clasificacionTorneoM.php';
-require_once '../../modelo/Eventos/conexion.php';
+require_once '../../modelo/Conexion.php';
 
 $retorno = array('mensaje','arrayClasificacionTorneo');
 	$clasificacionTorneoE = new ClasificacionTorneoE();
