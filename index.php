@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 session_start();
 
 if(isset($_SESSION['rolLogueado'])){
@@ -26,8 +26,6 @@ if(isset($_SESSION['rolLogueado'])){
 
 </head>
 <body class=" grey lighten-5">
-
-<!--Boton-->
 <div class="fixed-action-btn">
 	<a class="btn-floating btn-large red Sesion">
 		<i class="large material-icons">person_pin</i>
