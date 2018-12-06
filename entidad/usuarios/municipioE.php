@@ -1,29 +1,34 @@
-<?php
-class tipoDocumentoE
+
+<?php 
+
+
+class municipioE
 {
         	
-        	private $idTipoDocumento;
-        	private $tidNombre;
-            private $tidAbreviacion;
+        	private $idMunicipio;
+        	private $idDepartamento;
+            private $munCodigoDane;
+            private $munNombre;
             private $UsuarioCreacion;
             private $UsuarioModificacion;
 
+
     /**
      * @return mixed
      */
-    public function getIdTipoDocumento()
+    public function getIdMunicipio()
     {
-        return $this->idTipoDocumento;
+        return $this->idMunicipio;
     }
 
     /**
-     * @param mixed $idTipoDocumento
+     * @param mixed $idMunicipio
      *
      * @return self
      */
-    public function setIdTipoDocumento($idTipoDocumento)
+    public function setIdMunicipio($idMunicipio)
     {
-        $this->idTipoDocumento = $idTipoDocumento;
+        $this->idMunicipio = $idMunicipio;
 
         return $this;
     }
@@ -31,19 +36,19 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidNombre()
+    public function getIdDepartamento()
     {
-        return $this->tidNombre;
+        return $this->idDepartamento;
     }
 
     /**
-     * @param mixed $tidNombre
+     * @param mixed $idDepartamento
      *
      * @return self
      */
-    public function setTidNombre($tidNombre)
+    public function setIdDepartamento($idDepartamento)
     {
-        $this->tidNombre = $tidNombre;
+        $this->idDepartamento = $idDepartamento;
 
         return $this;
     }
@@ -51,19 +56,39 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidAbreviacion()
+    public function getMunCodigoDane()
     {
-        return $this->tidAbreviacion;
+        return $this->munCodigoDane;
     }
 
     /**
-     * @param mixed $tidAbreviacion
+     * @param mixed $munCodigoDane
      *
      * @return self
      */
-    public function setTidAbreviacion($tidAbreviacion)
+    public function setMunCodigoDane($munCodigoDane)
     {
-        $this->tidAbreviacion = $tidAbreviacion;
+        $this->munCodigoDane = $munCodigoDane;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMunNombre()
+    {
+        return $this->munNombre;
+    }
+
+    /**
+     * @param mixed $munNombre
+     *
+     * @return self
+     */
+    public function setMunNombre($munNombre)
+    {
+        $this->munNombre = $munNombre;
 
         return $this;
     }

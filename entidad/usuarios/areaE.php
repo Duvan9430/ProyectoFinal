@@ -1,29 +1,30 @@
 <?php
-class tipoDocumentoE
+class areaE
 {
         	
-        	private $idTipoDocumento;
-        	private $tidNombre;
-            private $tidAbreviacion;
+        	private $idArea;
+        	private $areNombre;
             private $UsuarioCreacion;
             private $UsuarioModificacion;
 
+    
+
     /**
      * @return mixed
      */
-    public function getIdTipoDocumento()
+    public function getIdArea()
     {
-        return $this->idTipoDocumento;
+        return $this->idArea;
     }
 
     /**
-     * @param mixed $idTipoDocumento
+     * @param mixed $idArea
      *
      * @return self
      */
-    public function setIdTipoDocumento($idTipoDocumento)
+    public function setIdArea($idArea)
     {
-        $this->idTipoDocumento = $idTipoDocumento;
+        $this->idArea = $idArea;
 
         return $this;
     }
@@ -31,39 +32,19 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidNombre()
+    public function getAreNombre()
     {
-        return $this->tidNombre;
+        return $this->areNombre;
     }
 
     /**
-     * @param mixed $tidNombre
+     * @param mixed $areNombre
      *
      * @return self
      */
-    public function setTidNombre($tidNombre)
+    public function setAreNombre($areNombre)
     {
-        $this->tidNombre = $tidNombre;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTidAbreviacion()
-    {
-        return $this->tidAbreviacion;
-    }
-
-    /**
-     * @param mixed $tidAbreviacion
-     *
-     * @return self
-     */
-    public function setTidAbreviacion($tidAbreviacion)
-    {
-        $this->tidAbreviacion = $tidAbreviacion;
+        $this->areNombre = $areNombre;
 
         return $this;
     }

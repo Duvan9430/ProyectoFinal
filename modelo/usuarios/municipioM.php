@@ -1,6 +1,7 @@
 <?php
-	class tipoDocumentoM
+	class municipioM
 	{
+		private $munNombre;
 		private $miConexion;
 		private $retorno;
 		function __construct()
@@ -11,11 +12,11 @@
 		public function consultar()
 		{
 			try{
-				$sentenciaSql="SELECT * FROM tipodocumento WHERE estado='A'";
+				$sentenciaSql="SELECT * FROM municipio WHERE estado='A' AND munNombre LIKE '$this->munNombre'";
 				$resultado = $this->miConexion->query($sentenciaSql);
 	            $this->retorno->estado = true;
 	            $this->retorno->datos = $resultado;
-	            $this->retorno->mensaje = "Datos de la persona.";
+	            $this->retorno->mensaje = "Datos del municipio.";
 	            }catch(PDOException $e){
 				$this->retorno->estado = false;
 	            $this->retorno->datos1 = null;
@@ -26,11 +27,11 @@
 		public function consultarModal()
 		{
 			try{
-				$sentenciaSql="SELECT * FROM tipodocumento WHERE estado='A'";
+				$sentenciaSql="SELECT * FROM municipio WHERE estado='A'";
 				$resultado = $this->miConexion->query($sentenciaSql);
 	            $this->retorno->estado = true;
 	            $this->retorno->datos = $resultado;
-	            $this->retorno->mensaje = "Datos de la persona.";
+	            $this->retorno->mensaje = "Datos del municipio.";
 	            }catch(PDOException $e){
 				$this->retorno->estado = false;
 	            $this->retorno->datos1 = null;

@@ -1,5 +1,5 @@
 <?php
-	class fichaM
+	class areaM
 	{
 		private $miConexion;
 		private $retorno;
@@ -11,11 +11,11 @@
 		public function consultar()
 		{
 			try{
-				$sentenciaSql="SELECT * FROM ficha WHERE estado='A'";
+				$sentenciaSql="SELECT * FROM area WHERE estado='A'";
 				$resultado = $this->miConexion->query($sentenciaSql);
 	            $this->retorno->estado = true;
 	            $this->retorno->datos = $resultado;
-	            $this->retorno->mensaje = "Datos de la ficha.";
+	            $this->retorno->mensaje = "Datos del area.";
 	            }catch(PDOException $e){
 				$this->retorno->estado = false;
 	            $this->retorno->datos1 = null;

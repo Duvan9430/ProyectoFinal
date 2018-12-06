@@ -1,29 +1,31 @@
 <?php
-class tipoDocumentoE
+class epsE
 {
         	
-        	private $idTipoDocumento;
-        	private $tidNombre;
-            private $tidAbreviacion;
+        	private $idEps;
+        	private $epsCodigo;
+        	private $epsNombre;
             private $UsuarioCreacion;
             private $UsuarioModificacion;
+            
+            
 
     /**
      * @return mixed
      */
-    public function getIdTipoDocumento()
+    public function getIdEps()
     {
-        return $this->idTipoDocumento;
+        return $this->idEps;
     }
 
     /**
-     * @param mixed $idTipoDocumento
+     * @param mixed $idEps
      *
      * @return self
      */
-    public function setIdTipoDocumento($idTipoDocumento)
+    public function setIdEps($idEps)
     {
-        $this->idTipoDocumento = $idTipoDocumento;
+        $this->idEps = $idEps;
 
         return $this;
     }
@@ -31,19 +33,19 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidNombre()
+    public function getEpsCodigo()
     {
-        return $this->tidNombre;
+        return $this->epsCodigo;
     }
 
     /**
-     * @param mixed $tidNombre
+     * @param mixed $epsCodigo
      *
      * @return self
      */
-    public function setTidNombre($tidNombre)
+    public function setEpsCodigo($epsCodigo)
     {
-        $this->tidNombre = $tidNombre;
+        $this->epsCodigo = $epsCodigo;
 
         return $this;
     }
@@ -51,19 +53,19 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidAbreviacion()
+    public function getEpsNombre()
     {
-        return $this->tidAbreviacion;
+        return $this->epsNombre;
     }
 
     /**
-     * @param mixed $tidAbreviacion
+     * @param mixed $epsNombre
      *
      * @return self
      */
-    public function setTidAbreviacion($tidAbreviacion)
+    public function setEpsNombre($epsNombre)
     {
-        $this->tidAbreviacion = $tidAbreviacion;
+        $this->epsNombre = $epsNombre;
 
         return $this;
     }
@@ -108,4 +110,3 @@ class tipoDocumentoE
         return $this;
     }
 }
-?>
