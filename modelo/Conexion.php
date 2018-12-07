@@ -8,7 +8,7 @@
     private $host = "localhost";
     private $user = "root";
     private $pass = "";
-    private $db = "proyectoformativo";
+    private $db = "bdproyecto";
     
 
     public function __construct(){

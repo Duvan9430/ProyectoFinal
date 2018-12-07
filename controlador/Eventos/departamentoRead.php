@@ -1,5 +1,5 @@
 <?php  
-require_once '../../modelo/Conexion.php';
+require_once '../../modelo/Eventos/conexion.php';
 require_once '../../entidad/Eventos/departamentoE.php';
 require_once '../../modelo/Eventos/departamentoM.php';
 
