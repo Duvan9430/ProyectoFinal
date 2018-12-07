@@ -1,29 +1,32 @@
 <?php
-class tipoDocumentoE
+class sedeE
 {
         	
-        	private $idTipoDocumento;
-        	private $tidNombre;
-            private $tidAbreviacion;
+        	private $idSede;
+        	private $idCentroFormacion;
+        	private $sedCodigo;
+        	private $sedNombre;
             private $UsuarioCreacion;
             private $UsuarioModificacion;
+            
+
 
     /**
      * @return mixed
      */
-    public function getIdTipoDocumento()
+    public function getIdSede()
     {
-        return $this->idTipoDocumento;
+        return $this->idSede;
     }
 
     /**
-     * @param mixed $idTipoDocumento
+     * @param mixed $idSede
      *
      * @return self
      */
-    public function setIdTipoDocumento($idTipoDocumento)
+    public function setIdSede($idSede)
     {
-        $this->idTipoDocumento = $idTipoDocumento;
+        $this->idSede = $idSede;
 
         return $this;
     }
@@ -31,19 +34,19 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidNombre()
+    public function getIdCentroFormacion()
     {
-        return $this->tidNombre;
+        return $this->idCentroFormacion;
     }
 
     /**
-     * @param mixed $tidNombre
+     * @param mixed $idCentroFormacion
      *
      * @return self
      */
-    public function setTidNombre($tidNombre)
+    public function setIdCentroFormacion($idCentroFormacion)
     {
-        $this->tidNombre = $tidNombre;
+        $this->idCentroFormacion = $idCentroFormacion;
 
         return $this;
     }
@@ -51,19 +54,39 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidAbreviacion()
+    public function getSedCodigo()
     {
-        return $this->tidAbreviacion;
+        return $this->sedCodigo;
     }
 
     /**
-     * @param mixed $tidAbreviacion
+     * @param mixed $sedCodigo
      *
      * @return self
      */
-    public function setTidAbreviacion($tidAbreviacion)
+    public function setSedCodigo($sedCodigo)
     {
-        $this->tidAbreviacion = $tidAbreviacion;
+        $this->sedCodigo = $sedCodigo;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSedNombre()
+    {
+        return $this->sedNombre;
+    }
+
+    /**
+     * @param mixed $sedNombre
+     *
+     * @return self
+     */
+    public function setSedNombre($sedNombre)
+    {
+        $this->sedNombre = $sedNombre;
 
         return $this;
     }
@@ -108,4 +131,3 @@ class tipoDocumentoE
         return $this;
     }
 }
-?>

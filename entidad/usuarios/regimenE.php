@@ -1,29 +1,30 @@
 <?php
-class tipoDocumentoE
+class regimenE
 {
         	
-        	private $idTipoDocumento;
-        	private $tidNombre;
-            private $tidAbreviacion;
+        	private $idRegimen;
+          	private $regNombre;
             private $UsuarioCreacion;
             private $UsuarioModificacion;
+            
+            
 
     /**
      * @return mixed
      */
-    public function getIdTipoDocumento()
+    public function getIdRegimen()
     {
-        return $this->idTipoDocumento;
+        return $this->idRegimen;
     }
 
     /**
-     * @param mixed $idTipoDocumento
+     * @param mixed $idRegimen
      *
      * @return self
      */
-    public function setIdTipoDocumento($idTipoDocumento)
+    public function setIdRegimen($idRegimen)
     {
-        $this->idTipoDocumento = $idTipoDocumento;
+        $this->idRegimen = $idRegimen;
 
         return $this;
     }
@@ -31,39 +32,19 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidNombre()
+    public function getRegNombre()
     {
-        return $this->tidNombre;
+        return $this->regNombre;
     }
 
     /**
-     * @param mixed $tidNombre
+     * @param mixed $regNombre
      *
      * @return self
      */
-    public function setTidNombre($tidNombre)
+    public function setRegNombre($regNombre)
     {
-        $this->tidNombre = $tidNombre;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTidAbreviacion()
-    {
-        return $this->tidAbreviacion;
-    }
-
-    /**
-     * @param mixed $tidAbreviacion
-     *
-     * @return self
-     */
-    public function setTidAbreviacion($tidAbreviacion)
-    {
-        $this->tidAbreviacion = $tidAbreviacion;
+        $this->regNombre = $regNombre;
 
         return $this;
     }

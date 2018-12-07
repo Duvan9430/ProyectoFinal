@@ -1,16 +1,12 @@
-<?php 
-
-/**
-* 
-*/
-class FichaE 
+<?php
+class fichaE
 {
-	
-	private $idFicha;
-	private $ficNombre;
-	private $ficNumero;
-	
-
+        	
+        	private $idFicha;
+        	private $ficNumero;
+        	private $ficNombre;
+            private $UsuarioCreacion;
+            private $UsuarioModificacion;
 
     /**
      * @return mixed
@@ -28,6 +24,26 @@ class FichaE
     public function setIdFicha($idFicha)
     {
         $this->idFicha = $idFicha;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFicNumero()
+    {
+        return $this->ficNumero;
+    }
+
+    /**
+     * @param mixed $ficNumero
+     *
+     * @return self
+     */
+    public function setFicNumero($ficNumero)
+    {
+        $this->ficNumero = $ficNumero;
 
         return $this;
     }
@@ -55,24 +71,6 @@ class FichaE
     /**
      * @return mixed
      */
-    public function getFicNumero()
-    {
-        return $this->ficNumero;
-    }
-
-    /**
-     * @param mixed $ficNumero
-     *
-     * @return self
-     */
-    public function setFicNumero($ficNumero)
-    {
-        $this->ficNumero = $ficNumero;
-
-        return $this;
-    }
-
-
     public function getUsuarioCreacion()
     {
         return $this->UsuarioCreacion;
@@ -109,8 +107,5 @@ class FichaE
 
         return $this;
     }
-
 }
-
-
- ?>
+?>

@@ -1,29 +1,26 @@
 <?php
-class tipoDocumentoE
+class grupoSanguineoE
 {
         	
-        	private $idTipoDocumento;
-        	private $tidNombre;
-            private $tidAbreviacion;
+        	private $idSrupoSanguineo;
+        	private $grsNombre;
             private $UsuarioCreacion;
             private $UsuarioModificacion;
 
-    /**
-     * @return mixed
-     */
-    public function getIdTipoDocumento()
+    
+    public function getIdSrupoSanguineo()
     {
-        return $this->idTipoDocumento;
+        return $this->idSrupoSanguineo;
     }
 
     /**
-     * @param mixed $idTipoDocumento
+     * @param mixed $idSrupoSanguineo
      *
      * @return self
      */
-    public function setIdTipoDocumento($idTipoDocumento)
+    public function setIdSrupoSanguineo($idSrupoSanguineo)
     {
-        $this->idTipoDocumento = $idTipoDocumento;
+        $this->idSrupoSanguineo = $idSrupoSanguineo;
 
         return $this;
     }
@@ -31,39 +28,19 @@ class tipoDocumentoE
     /**
      * @return mixed
      */
-    public function getTidNombre()
+    public function getGrsNombre()
     {
-        return $this->tidNombre;
+        return $this->grsNombre;
     }
 
     /**
-     * @param mixed $tidNombre
+     * @param mixed $grsNombre
      *
      * @return self
      */
-    public function setTidNombre($tidNombre)
+    public function setGrsNombre($grsNombre)
     {
-        $this->tidNombre = $tidNombre;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTidAbreviacion()
-    {
-        return $this->tidAbreviacion;
-    }
-
-    /**
-     * @param mixed $tidAbreviacion
-     *
-     * @return self
-     */
-    public function setTidAbreviacion($tidAbreviacion)
-    {
-        $this->tidAbreviacion = $tidAbreviacion;
+        $this->grsNombre = $grsNombre;
 
         return $this;
     }
@@ -107,5 +84,8 @@ class tipoDocumentoE
 
         return $this;
     }
+
 }
+
 ?>
+
