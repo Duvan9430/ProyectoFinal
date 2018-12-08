@@ -35,6 +35,12 @@ img#seccion{
 .page-footer{
 	background-color: #238276;
 }
+body{
+   background-image: url(../../img/proyecto.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
 
 .footer-copyright{
 	background-color: #00796b !important;

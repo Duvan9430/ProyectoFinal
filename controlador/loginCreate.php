@@ -1,7 +1,7 @@
 <?php 
-require_once '../Modelo/Conexion.php';
-require_once '../Entidad/iniciarSesionE.php';
-require_once '../Modelo/iniciarSesionM.php';
+require_once '../modelo/Conexion.php';
+require_once '../entidad/iniciarSesionE.php';
+require_once '../modelo/iniciarSesionM.php';
 
 error_reporting(1);
 	$retorno = array('mensaje' => '', 'estado' =>null, 'array' => null);
@@ -23,7 +23,7 @@ error_reporting(1);
 	 	$retorno["array"] = $resultado->datos->fetch(PDO::FETCH_ASSOC);
 	 	session_start();
 	 	
-	 	$_SESSION['idPersona'] = $retorno['array'][0];
+	 	$_SESSION['idUsuario'] = $retorno['array']["idUsuario"];
 	 	$_SESSION['rolLogueado'] = $retorno['array']['idRol'];
 	 	$_SESSION['nombreUnoLogueado'] = $retorno['array']['perPrimerNombre'];
 	 	$_SESSION['nombreDosLogueado'] = $retorno['array']['perSegundoNombre'];

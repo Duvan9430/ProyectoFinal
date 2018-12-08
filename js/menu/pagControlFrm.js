@@ -1,4 +1,3 @@
-
 $(document).on("click","#btnCorreoM",function(){
    $("#contenido").load("../vista/Rutinas/CorreoFrm.php");
 })
@@ -25,4 +24,8 @@ $(document).on("click","#btnMusculoM",function(){
 
 $(document).on("click","#btnEjerMusM",function(){
 	$("#contenido").load("../vista/Rutinas/ejercicioMusculoFrm.php");
+})
+
+$(document).on("click","#btnRutinasAprendizM",function(){
+	$("#contenido").load("../vista/Rutinas/frmConsultarRutinaAprendizFrm.php");
 })

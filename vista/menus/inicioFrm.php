@@ -1,26 +1,32 @@
 <?php session_start(); ?>
-<div class="container">
-    <div class="card-body col s12">
-    	<div id="texto">
-			<h4 style="color: #238276"><b>Bienvenido  <?php echo $_SESSION['nombreUnoLogueado'];?> <?php echo $_SESSION['nombreDosLogueado']; ?>  <?php echo $_SESSION['apellidoUnoLogueado']; ?></b></h4>
-			<br>
-	
-			<h5 style="color: #fc7323" ><b>Buena alimentación + Actividad física</b></h5>
-			<br>
-			<p>
-				<b>Para tener una adecuada alimentación es importante alcanzar un equilibro calórico,</b>
-			</p>
-			<p>
-				<b>es decir, lograr el mejor balance entre las calorías que se consumen y las calorías</b>
-			</p>
-			<p>
-				<b>que se gastan en las funciones diarias del organismo, la actividad diaria y el ejercicio.</b>
-			</p>	 
-			<br>
-			<br>
-			<div>
-				<img id="imagenPrinc" name="imagenPrinc" src="../img/aprendiz1.jpg" alt="">
-			</div>
-		</div>
+
+	<div class="container">
+			    <div class="card-body col s12">
+			    	<div id="texto">
+					<div class="barra valing center">
+						<h4><font color="white"><b>Bienvenido  <?php echo $_SESSION['nombreUnoLogueado'];?> <?php echo $_SESSION['nombreDosLogueado']; ?>  <?php echo $_SESSION['apellidoUnoLogueado']; ?></b></font></h4> 
+						<hr style="color: orange">                    
+					</div>	
+						
+						<br>
+						<div class="row"> 
+								<div class="col s12">
+									<div class="card">
+									    <div class="card-image waves-effect waves-block waves-light">
+									      <img class="activator" src="../img/inicio.jpg">
+									    </div>
+									    <div class="card-content">
+									      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+									      <p><a href="#">This is a link</a></p>
+									    </div>
+									    <div class="card-reveal">
+									      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+									      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+									    </div>
+							  		</div>
+							  	</div>
+			            </div> 
+					</div>
+				</div>
 	</div>
 </div>
