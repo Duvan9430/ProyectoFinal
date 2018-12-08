@@ -19,7 +19,7 @@
           <h3 class="center-align">Gimnasio</h3>
           <br>
           <div class=" float-button">
-            <a class="btn-floating btn-large btn-principal waves-effect waves-light btn modalGrande-trigger left-align posicion " href="#modal1"><i class="large material-icons">add</i></a>            
+            <a class="btn-floating btn-large btn-principal waves-effect waves-light btn modalGrande-trigger " href="#modal1"><i class="large material-icons">add</i></a>            
           </div>
           <article class="col s12 ">
           <!-- <form method="POST" id="crearGimnasioFrm" action="../Entidad/ctrlCreateGimnasio.php">-->

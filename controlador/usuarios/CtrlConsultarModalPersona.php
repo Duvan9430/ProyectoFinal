@@ -1,6 +1,6 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/MdlPersona.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/MdlPersona.php';
 	error_reporting(1);
 	$retorno = array('mensaje','personas');
 	

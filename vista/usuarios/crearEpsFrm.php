@@ -10,14 +10,13 @@
 	 <!-- Libreria Materialize -->
      <link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.css">
      <!-- Estilos de la Pagina -->
-     <link rel="stylesheet" type="text/css" href="../css/estilos.css"> 
 </head>
 <body>     
 	<section class="container">
 		<div class="row">
-					<h1 class="center-align">Eps</h1>
+					<h3 class="center">Eps</h3>
 					<!--Form 1-->
-					<div class="fixed-action-btn horizontal float-button ">
+					<div class="fixed-action-btn horizontal">
 				        <a class="btn-floating btn-large btn-principal waves-effect waves-light btn modalGrande-trigger left-align posicion" href="#modal1">
 				            <i class="large material-icons">add</i>
 				        </a>
@@ -94,12 +93,12 @@
 	<script src="../js/Librerias/materialize.min.js"></script>
 	<script type="text/javascript" src="../js/Librerias/jquery.ambiance.js"></script>
 	<script type="text/javascript" src="../js/Librerias/materialize - copia.js"></script>
-	<script type="text/javascript" src="../js/Librerias/Global.js"></script> 
 	<script>
 		 $(document).ready(function(){
     		$('select').formSelect();
   		});
-
+		 	$(".modalGrande").modalGrande();
+		 	$(".modal").modal();
 		   $(document).ready(function() {
     		$('input#input_text, textarea#textarea2').characterCounter();
   		});

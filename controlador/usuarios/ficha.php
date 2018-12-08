@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/fichaM.php';
-	require_once '../Entidad/fichaE.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/fichaM.php';
+	require_once '../../entidad/usuarios/fichaE.php';
 
 
 	$retorno = array('mensaje','arrayFicha');

@@ -40,10 +40,7 @@ $(document).ready(function(){
 $(document).on('click','#btnGuardar', function() {
 		var nombre_ficha=$('#ficNombre').val();
 		var numero_ficha=$('#ficNumero').val();
-		console.log(nombre_ficha);
-		console.log(numero_ficha);
-		
-		if(nombre_ficha && numero_ficha ){
+		if(nombre_ficha.val != "" && numero_ficha != "" ){
 				$.ajax({
 				url: '../controlador/usuarios/fichaCreate.php',
 				type: 'POST',
@@ -62,8 +59,8 @@ $(document).on('click','#btnGuardar', function() {
 
 			})
 
-			.fail(function() {
-				console.log("error");
+			.fail(function(retorno) {
+				console.log(retorno);
 				
 			});
 		}
@@ -98,8 +95,8 @@ function tablaFicha() {
 
 			$('#tFicha').html(tabla);
 		})
-		.fail(function() {
-			console.log("Error");
+		.fail(function(retorno) {
+			console.log(retorno);
 
 		});		
 	}	

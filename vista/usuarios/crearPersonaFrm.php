@@ -1,31 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
+
 	<title>Adicionar Personas</title>
-	 <link rel="stylesheet" href="../Css/css/materialize.min.css">
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	 <link rel="stylesheet" type="text/css" href="../Css/css/jquery.ambiance.css">
-	 <link rel="stylesheet" type="text/css" href="../Css/css/bitnami.css">
+	 <link rel="stylesheet" type="text/css" href="../css/Librerias/jquery.ambiance.css">
+	 <link rel="stylesheet" type="text/css" href="../css/Librerias/bitnami.css">
 	 <!-- Libreria Materialize -->
-     <link rel="stylesheet" type="text/css" href="../Css/css/materialize.css">
-     <!-- Estilos de la Pagina -->
-     <link rel="stylesheet" type="text/css" href="../Css/css/estilos.css"> 
-</head>
-<body>
+     <link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.css">
+
 	<!-- Banner -->
-  <header><img src="../Imagenes/banner-main.PNG"></header>
-<!-- Barra de navegacion -->
-	<nav>
-    	<div class="categories-wrapper z-depth-4">
-        	<div class="categories-container">
-            	<ul class="categories container">
-              		<img src="../Imagenes/Logo2.png" class="logo right">
-                	<li class="active"><a href="#all"></a></li>
-            	</ul>
-        	</div>
-    	</div>
-  	</nav>
+
 	<section class="container">
 		&nbsp
 		<div class="row">
@@ -258,38 +240,13 @@
 			</article>
 		</div>
 	</section>
-	    <footer class="page-footer">
-	        <div class="container">
-	            <div class="row">
-	              <div class="col l6 s12">
-	                <h5 class="white-text">EBG</h5>
-	                <p class="grey-text text-lighten-4">Energetic Body Gym</p>
-	              </div>
-	            </div>
-	        </div>
-	        <div class="footer-copyright">
-	            <div class="container">
-		            <a href="http://www.sena.edu.co/" target="_blank" class="grey-text text-lighten-4 left">
-		              	<h6>&nbsp;&nbsp;© ADSI 1446435</h6>
-		            </a>
-		            <a href="http://www.sena.edu.co/" target="_blank" class="grey-text text-lighten-4 right">
-		              <img src="../Imagenes/logo.png" width="40px" height="40px">
-		            </a>
-		            <a href="http://oferta.senasofiaplus.edu.co/" target="_blank" class="grey-text text-lighten-4 right">
-		              <img src="../Imagenes/developers-V2.png" width="55px" height="46px">
-		            </a>
-	            </div>
-	        </div>
-        </footer>
-	
-</body>
     
-    <script src="../Js/js/jquery-3.3.1.js"></script>
-	<script src="../Js/js/materialize.min.js"></script>
-	<script type="text/javascript" src="../Js/js/jquery.ambiance.js"></script>
-	<script type="text/javascript" src="../Js/js/materialize - copia.js"></script>
-	<script type="text/javascript" src="../Js/js/Global.js"></script> 
-	<script type="text/javascript" src="../Js/js/jquery-ui.min.js"></script> 
+    <script src="../js/Librerias/jquery-3.3.1.js"></script>
+	<script src="../js/Librerias/materialize.min.js"></script>
+	<script type="text/javascript" src="../js/Librerias/jquery.ambiance.js"></script>
+	<script type="text/javascript" src="../js/Librerias/materialize - copia.js"></script>
+	<script type="text/javascript" src="../js/Librerias/Global.js"></script> 
+	<script type="text/javascript" src="../js/Librerias/jquery-ui.min.js"></script> 
 	<script>
 		$(document).ready(function(){
     	$('select').formSelect();
@@ -316,9 +273,9 @@
 
 
 	</script>
-	<script type="text/javascript" src="../Js/persona.js"></script>
-	<script type="text/javascript" src="../Js/jquery-3.3.1.js"></script>
-	<script type="text/javascript" src="../Js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" src="../Js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="../js/usuarios/persona.js"></script>
+	<script type="text/javascript" src="../js/Librerias/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../js/Librerias/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="../js/datatable/dataTables.material.min.js"></script>
 	
 </html>

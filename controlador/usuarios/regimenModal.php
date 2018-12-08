@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/regimenM.php';
-	require_once '../Entidad/regimenE.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/regimenM.php';
+	require_once '../../entidad/usuarios/regimenE.php';
 
 
 	$retorno = array('mensaje','arrayRegimenModal');

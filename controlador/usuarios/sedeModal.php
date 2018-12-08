@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/SedeM.php';
-	require_once '../Entidad/sedeE.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/SedeM.php';
+	require_once '../../entidad/usuarios/sedeE.php';
 
 
 	$retorno = array('mensaje','arraySedeModal');

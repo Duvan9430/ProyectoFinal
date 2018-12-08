@@ -27,7 +27,7 @@ if(isset($_SESSION['rolLogueado'])){
 	<div class="categories-wrapper z-depth-4">
 		    <div class="categories-container">
 		        <ul class="categories noHover">
-		        	<a href="#" class="sidenav-trigger btnMenuM show-on-large" data-target="menu-side"><i class=" material-icons">menu</i></a>
+		        	<a href="#" class="sidenav-trigger btnMenuM show-on-large" data-target="menu-side" style="margin-top: 0.6%"><i class=" material-icons">menu</i></a>
 		        	<img src="../img/Logo2.png" class="logo left">
 		            <li class="active"><a href="#all"></a></li>
 		        </ul>

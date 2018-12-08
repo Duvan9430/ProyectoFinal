@@ -1,7 +1,7 @@
 <?php  
-require_once '../Modelo/Conexion.php';
-require_once '../Entidad/departamentoE.php';
-require_once '../Modelo/departamentoM.php';
+require_once '../../modelo/Conexion.php';
+require_once '../../entidad/usuarios/departamentoE.php';
+require_once '../../modelo/usuarios/departamentoM.php';
 
 error_reporting(1);
 $retorno = array('mensaje','departamento');

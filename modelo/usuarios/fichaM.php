@@ -8,7 +8,7 @@
 			$this->miConexion = Conexion::singleton();
         	$this->retorno = new stdClass();
 		}
-		public function consultar()
+		public function Read()
 		{
 			try{
 				$sentenciaSql="SELECT * FROM ficha WHERE estado='A'";

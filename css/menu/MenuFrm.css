@@ -15,7 +15,15 @@
 
 }
 
+hr{
+  border-color: #fc7323;
+  height: 3px;
+  background-color: #fc7323;
+}
 
+body{
+  background-color: #e0f2f1;
+}
 .noHover{
   box-shadow: none !important;
 }
@@ -34,12 +42,6 @@ img#seccion{
 }
 .page-footer{
 	background-color: #238276;
-}
-body{
-   background-image: url(../../img/proyecto.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
 }
 
 .footer-copyright{
@@ -71,10 +73,6 @@ nav .categories-wrapper .categories-container .categories > li{
 body{
   font-family: verdana;
   
-}
-h1{
-  font-family: Freestyle Script;
-  font-size: 80px;
 }
 
 #imagenPrinc{
@@ -203,6 +201,13 @@ body {
 
 #contenido {
    flex: 1 0 auto;
+}
+
+.botonMenu{
+  background-color: #fc7323 !important;
+  color: #000 !important;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 

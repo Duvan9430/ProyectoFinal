@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>EBG</title>
-  <!-- Iconos -->
+
   <link rel="stylesheet" type="text/css" href="../css/Librerias/bitnami.css">
   <!-- Libreria Materialize -->
   <link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.css">
   <!-- Estilos de la Pagina -->
-  <link rel="stylesheet" type="text/css" href="../css/Librerias/estilos.css">
 
-  <link rel="stylesheet" type="text/css" href="../css/Librerias/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/Librerias/dataTables.material.min.css">
   <link rel="stylesheet" type="text/css" href="../css/Librerias/jquery.dataTables.min.css">
   <link rel="stylesheet" type="text/css" href="../css/Librerias/buttons.dataTables.min.css">
-</head>
-<body>
+
   <div class="container" id="contenido">
   <!-- Contenido -->
   <div class="card">
@@ -21,7 +15,7 @@
       <section class="container">
         <div class="row">
         <h4 class="center-align">Ficha</h4>
-        <div class="fixed-action-btn horizontal float-button ">
+        <div class="fixed-action-btn horizontal ">
                 <a class="btn-floating btn-large btn-principal waves-effect waves-light btn modalMediano-trigger left-align posicion" href="#modal2">
                 <i class="large material-icons">add</i>
               </a>
@@ -103,6 +97,3 @@
   <script type="text/javascript" src="../js/Librerias/buttons.print.min.js"></script>
  
   <script type="text/javascript" src="../js/usuarios/ficha.js"></script>
-
-</body>
-</html>

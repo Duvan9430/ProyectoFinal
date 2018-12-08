@@ -22,7 +22,7 @@
 					<br>
 					<!--Form 1-->
 					<div class="float-button ">
-						<a class="btn-floating btn-large btn-principal waves-effect waves-light btn modalGrande-trigger left-align posicion" href="#modal1">
+						<a class="btn-floating btn-large btn-principal waves-effect waves-light btn modalGrande-trigger" href="#modal1">
 						<i class="large material-icons">add</i>
 						</a>
 				    </div>

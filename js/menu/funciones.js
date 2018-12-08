@@ -44,19 +44,23 @@ $(document).ready(function(){
   }
 
 	$(document).on('click', '#btnAprendiz', function(){
+    	location.reload();
 		$('#contenido').load('../vista/menus/pagAprendizFrm.php');
-    sessionStorage.setItem('pagina','../vista/menus/pagAprendizFrm.php');
+    	sessionStorage.setItem('pagina','../vista/menus/pagAprendizFrm.php');
 	})
 	$(document).on('click', '#btnGimnasio', function(){
+		location.reload();
 		$('#contenido').load('../vista/menus/pagGimnasioFrm.php');
-    sessionStorage.setItem('pagina','../vista/menus/pagGimnasioFrm.php');
+    	sessionStorage.setItem('pagina','../vista/menus/pagGimnasioFrm.php');
 	})
 	$(document).on('click', '#btnEventos', function(){
+		location.reload();
 		$('#contenido').load('../vista/menus/pagEventosFrm.php');
-    sessionStorage.setItem('pagina','../vista/menus/pagEventosFrm.php');
+    	sessionStorage.setItem('pagina','../vista/menus/pagEventosFrm.php');
 	})
 
 	$(document).on('click', '#btnControl', function(){
+		location.reload();
 		$('#contenido').load('../vista/menus/pagControlFrm.php');
 		sessionStorage.setItem('pagina','../vista/menus/pagControlFrm.php');
 	})

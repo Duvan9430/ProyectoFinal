@@ -31,7 +31,7 @@ function idEliminar(idPersona){
     });
   function consultarDepartamento() {
     $.ajax({
-      url: '../Controlador/departamento.php',
+      url: '../controlador/usuarios/departamento.php',
       type: 'POST',
       dataType: 'json',
       data: null,
@@ -58,7 +58,7 @@ function idEliminar(idPersona){
   });
 function consultarMunicipioNacimiento() {
 			$.ajax({
-				url: '../Controlador/municipioNac.php',
+				url: '../controlador/usuarios/municipioNac.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: {idDepartamento: $('#departamentoId').val()},
@@ -83,7 +83,7 @@ $(document).ready(function() {
 	$(document).on('click','#btnCrear', function() {
 		var formulario = new FormData($('#crearPersonaFrm')[0]);
 			$.ajax({
-				url: '../Controlador/CtrlCreatePersona.php',
+				url: '../controlador/usuarios/CtrlCreatePersona.php',
 				type: 'POST',
 				dataType: 'json',
 				data: formulario,
@@ -130,7 +130,7 @@ $(document).ready(function() {
 	$(document).on('click', '#btnModificar', function() {
 		var formulario = new FormData($('#formularioModificar')[0]);
 		$.ajax({
-			url: '../Controlador/CtrlModificarPersona.php',
+			url: '../controlador/usuarios/CtrlModificarPersona.php',
 			type: 'POST',
 				dataType: 'json',
 				data: formulario,
@@ -150,7 +150,7 @@ $(document).ready(function() {
 
 	function listarPersona(){
 			$.ajax({
-				url: '../Controlador/ctrlConsultarPersona.php',
+				url: '../controlador/usuarios/ctrlConsultarPersona.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -202,7 +202,7 @@ $(document).ready(function() {
 		$(document).on("click","#btnCargarModal",function() {
 			//alert('HOLA');
 		  	$.ajax({
-		  		url: '../Controlador/ctrlConsultarModalPersona.php',
+		  		url: '../controlador/usuarios/ctrlConsultarModalPersona.php',
 		  		type: 'POST',
 		  		dataType: 'JSON',
 		  		data: {idPersona: $('#txtIdPersonaModal').val()}
@@ -240,7 +240,7 @@ $(document).ready(function() {
 		$(document).on("click","#btnEliminar",function(){
 
 		           $.ajax({
-		           	url: '../Controlador/ctrlEliminarPersona.php',
+		           	url: '../controlador/usuarios/ctrlEliminarPersona.php',
 		           	type: 'POST',
 		           	dataType: 'JSON',
 		           	data: {idPersonaEliminar: id},
@@ -269,7 +269,7 @@ $(document).ready(function() {
 		//consultarFicha();
 		function consultarArea() {
 			$.ajax({
-				url: '../Controlador/area.php',
+				url: '../controlador/usuarios/area.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -289,7 +289,7 @@ $(document).ready(function() {
 		}
 		function consultarMunicipioResidencia() {
 			$.ajax({
-				url: '../Controlador/municipio.php',
+				url: '../controlador/usuarios/municipio.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -311,7 +311,7 @@ $(document).ready(function() {
 
 		function consultarTipoDocumento() {
 			$.ajax({
-				url: '../Controlador/tipoDocumento.php',
+				url: '../controlador/usuarios/tipoDocumento.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -332,7 +332,7 @@ $(document).ready(function() {
 		consultarTipoDocumento();
 		function consultarGenero() {
 			$.ajax({
-				url: '../Controlador/genero.php',
+				url: '../controlador/usuarios/genero.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -353,7 +353,7 @@ $(document).ready(function() {
 		consultarGenero();
 		function consultarGrupoSanguineo() {
 			$.ajax({
-				url: '../Controlador/grupoSanguineo.php',
+				url: '../controlador/usuarios/grupoSanguineo.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -374,7 +374,7 @@ $(document).ready(function() {
 		consultarGrupoSanguineo();
 		function consultarSede() {
 			$.ajax({
-				url: '../Controlador/sede.php',
+				url: '../controlador/usuarios/sede.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -395,7 +395,7 @@ $(document).ready(function() {
 		consultarSede();
 		function consultarEps() {
 			$.ajax({
-				url: '../Controlador/eps.php',
+				url: '../controlador/usuarios/eps.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -416,7 +416,7 @@ $(document).ready(function() {
 		consultarEps();
 		function consultarRegimen() {
 			$.ajax({
-				url: '../Controlador/regimen.php',
+				url: '../controlador/usuarios/regimen.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -438,7 +438,7 @@ $(document).ready(function() {
 	//-------------------
 	function consultarMunicipioNacimientoModal() {
 			$.ajax({
-				url: '../Controlador/municipioModal.php',
+				url: '../controlador/usuarios/municipioModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -459,7 +459,7 @@ $(document).ready(function() {
 		consultarMunicipioNacimientoModal();
 		function consultarMunicipioResidenciaModal() {
 			$.ajax({
-				url: '../Controlador/municipioModal.php',
+				url: '../controlador/usuarios/municipioModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -481,7 +481,7 @@ $(document).ready(function() {
 
 		function consultarTipoDocumentoModal() {
 			$.ajax({
-				url: '../Controlador/tipoDocumentoModal.php',
+				url: '../controlador/usuarios/tipoDocumentoModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -503,7 +503,7 @@ $(document).ready(function() {
 		
 		function consultarGeneroModal() {
 			$.ajax({
-				url: '../Controlador/generoModal.php',
+				url: '../controlador/usuarios/generoModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -524,7 +524,7 @@ $(document).ready(function() {
 		consultarGeneroModal();
 		function consultarGrupoSanguineoModal() {
 			$.ajax({
-				url: '../Controlador/grupoSanguineoModal.php',
+				url: '../controlador/usuarios/grupoSanguineoModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -545,7 +545,7 @@ $(document).ready(function() {
 		consultarGrupoSanguineoModal();
 		function consultarSedeModal() {
 			$.ajax({
-				url: '../Controlador/sedeModal.php',
+				url: '../controlador/usuarios/sedeModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -566,7 +566,7 @@ $(document).ready(function() {
 		consultarSedeModal();
 		function consultarEpsModal() {
 			$.ajax({
-				url: '../Controlador/epsModal.php',
+				url: '../controlador/usuarios/epsModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -587,7 +587,7 @@ $(document).ready(function() {
 		consultarEpsModal();
 		function consultarRegimenModal() {
 			$.ajax({
-				url: '../Controlador/regimenModal.php',
+				url: '../controlador/usuarios/regimenModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -608,7 +608,7 @@ $(document).ready(function() {
 		consultarRegimenModal();
 		function consultarFicha() {
 			$.ajax({
-				url: '../Controlador/ficha.php',
+				url: '../controlador/usuarios/ficha.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,

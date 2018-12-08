@@ -4,8 +4,8 @@
 			    <div class="card-body col s12">
 			    	<div id="texto">
 					<div class="barra valing center">
-						<h4><font color="white"><b>Bienvenido  <?php echo $_SESSION['nombreUnoLogueado'];?> <?php echo $_SESSION['nombreDosLogueado']; ?>  <?php echo $_SESSION['apellidoUnoLogueado']; ?></b></font></h4> 
-						<hr style="color: orange">                    
+						<h4><b>Bienvenido  <?php echo $_SESSION['nombreUnoLogueado'];?> <?php echo $_SESSION['nombreDosLogueado']; ?>  <?php echo $_SESSION['apellidoUnoLogueado']; ?></b></font></h4> 
+						<hr>                    
 					</div>	
 						
 						<br>

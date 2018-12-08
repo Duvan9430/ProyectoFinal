@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/municipioM.php';
-	require_once '../Entidad/municipioE.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/municipioM.php';
+	require_once '../../entidad/usuarios/municipioE.php';
 
 
 	$retorno = array('mensaje','arrayMunicipioModal');

@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/generoM.php';
-	require_once '../Entidad/generoE.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/generoM.php';
+	require_once '../../entidad/usuarios/generoE.php';
 
 
 	$retorno = array('mensaje','arrayGenero');

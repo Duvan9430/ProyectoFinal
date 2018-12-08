@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/epsM.php';
-	require_once '../Entidad/epsE.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/epsM.php';
+	require_once '../../entidad/usuarios/epsE.php';
 
 
 	$retorno = array('mensaje','arrayEps');

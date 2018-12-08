@@ -12,5 +12,5 @@ $(document).on("click","#btnCrearDocumento",function(){
 })
 
 $(document).on("click","#btnCrearPersona",function(){
-   $("#contenido").load("../vista/usuarios/persona.php");
+   $("#contenido").load("../vista/usuarios/crearPersonaFrm.php");
 })

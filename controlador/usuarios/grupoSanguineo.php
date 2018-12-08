@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/grupoSanguineoM.php';
-	require_once '../Entidad/grupoSanguineoE.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/grupoSanguineoM.php';
+	require_once '../../entidad/usuarios/grupoSanguineoE.php';
 
 
 	$retorno = array('mensaje','arrayGrupoSanguineoModal');

@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/areaM.php';
-	require_once '../Entidad/areaE.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/areaM.php';
+	require_once '../../entidad/usuarios/areaE.php';
 
 
 	$retorno = array('mensaje','arrayArea');
