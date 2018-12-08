@@ -1,5 +1,4 @@
 function modalCreate() {
-  $("#formularioCreate").html('');
 	$("#formularioCreate").load("Rutinas/musculoCreateFrm.php");
 }
 function modalModificar() {

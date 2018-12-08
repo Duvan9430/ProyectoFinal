@@ -1,14 +1,23 @@
+body {
+	background-color:#555;
+}
 header{
 	background-color: #238276;
 	background-image: url(../Img/banner-main.png);
 	width: 100%;
 	height: 80px;
 }
-
+.navbar-fixed{
+	position: absolute;
+	z-index: 99999;
+	background-image: url("../img/back1.2.png");
+}
 i.icon-teal {
     color: teal;
 }
-
+.brand-logo img {
+  height: 60px;
+}
 .modal-close{
   position: absolute;
   top:10px;

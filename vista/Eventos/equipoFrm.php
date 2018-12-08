@@ -80,11 +80,15 @@
 	<div class="modalGrande-content">
 		<form id="frmModificarEquipo">	
 				<div class="row">
-				<Center><h4>Modificar</h4></Center>
+				<h4>Modificar</h4>
+				&nbsp
 					<div class="col s12">
 						<div class="input-field col s3"></div>
+						<div class="input-field s1">
+						 	<i class="material-icons prefix">wb_auto</i>
+							</div>
 							<div class="input-field col s5">
-			      				<input type="text" name="txtIdEsquipo" id="txtIdEsquipo" hidden>
+			      				<input type="text" name="txtIdEsquipo" id="txtIdEsquipo">
 						    </div>
 						    <div class="input-field col s3"></div>
 			      	</div>
@@ -115,8 +119,7 @@
 						<a class="modalGrande-close waves-effect waves-green btn-flat " name="btnModificar" id="btnModificar" value="Crear" style="background-color: #fc7323; color: black; font-weight: bold;" ><i class="material-icons right icon-black">send</i>Guardar</a>
 					</div> 
 				</center>
-				&nbsp
-				</form>	
+				</form>			
           	</div>
 			</div>
 </div>

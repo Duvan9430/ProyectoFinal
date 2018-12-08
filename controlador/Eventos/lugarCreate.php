@@ -1,6 +1,6 @@
 <?php 
 require_once '../../modelo/Eventos/lugarM.php';
-require_once '../../modelo/Conexion.php';
+require_once '../../modelo/Eventos/conexion.php';
 require_once '../../entidad/Eventos/lugarE.php';
 error_reporting(1);
 $retorno = array('mensaje');

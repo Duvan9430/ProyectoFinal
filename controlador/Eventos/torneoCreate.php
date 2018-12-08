@@ -2,7 +2,7 @@
 
 require_once '../../modelo/Eventos/torneoM.php';
 require_once '../../entidad/Eventos/torneoE.php';
-require_once '../../modelo/Conexion.php';
+require_once '../../modelo/Eventos/conexion.php';
 
 error_reporting(1);
 $retorno = array('mensaje');

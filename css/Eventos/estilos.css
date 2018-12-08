@@ -42,6 +42,54 @@ i.icon-black {
     color: black;
 }
 
+
+
+.banner{
+	background-color: !important;
+}
+
+html,body{
+	height:100%;
+}
+
+/*Barra Navegacion*/
+nav .categories-wrapper {
+ background-color: #238276;
+ height: 64px;
+}
+
+nav .categories-wrapper .categories-container {
+ background-color: inherit;
+ white-space: nowrap;
+ overflow: auto;
+ z-index: 500;
+}
+
+nav .categories-wrapper .categories-container.pinned {
+ width: 100%;
+ box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav .categories-wrapper .categories-container .categories > li{
+ float: none;
+ display: inline-block;
+}
+
+.footer-copyright{
+	background-color: #004d40 !important;;
+}
+
+/*Banner*/
+header{
+	background-color: #238276;
+	background-image: url("../img/banner-main.PNG");
+	width: 100%;
+	height: 200px;
+}
+
+.footer-copyright{
+	background-color: #00796b !important;
+}
 @media screen and (max-width:1024px) and (min-width:640px) {
     .float-button{
       position: absolute; 
@@ -74,3 +122,12 @@ i.icon-black {
   background-color: #fc7323 !important;
 }
 
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+ #contenido{
+    flex: 1 0 auto;
+  }
