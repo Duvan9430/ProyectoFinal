@@ -17,6 +17,7 @@ function cargarModal(idFicha){
 	});
 	
 }
+
 function cargarModalEliminar(idFicha){
 	document.getElementById('idFichaModal').value=idFicha;
 }
@@ -25,6 +26,7 @@ $(document).ready(function(){
 	function ModalModificarrr() {
       $('#Modificar').load('../vista/usuarios/fichaUpdateFrm.php')
 	}
+	$(".modal").modal();
 
 
 	function ModalEliminarrr() {
@@ -40,7 +42,8 @@ $(document).ready(function(){
 $(document).on('click','#btnGuardar', function() {
 		var nombre_ficha=$('#ficNombre').val();
 		var numero_ficha=$('#ficNumero').val();
-		if(nombre_ficha.val != "" && numero_ficha != "" ){
+		
+		if(nombre_ficha != null  && numero_ficha != null){
 				$.ajax({
 				url: '../controlador/usuarios/fichaCreate.php',
 				type: 'POST',
@@ -55,7 +58,6 @@ $(document).on('click','#btnGuardar', function() {
 				document.getElementById('ficNombre').value = '';
 				document.getElementById('ficNumero').value = '';
 				tablaFicha();
-			
 
 			})
 
@@ -65,7 +67,7 @@ $(document).on('click','#btnGuardar', function() {
 			});
 		}
 		else{
-		  	alert("campo vacío");
+		  	M.toast({html: "Llene todos los campos"});
 		}
 	})
 
@@ -87,16 +89,16 @@ function tablaFicha() {
 				tabla += '<tr>';
 				tabla += 	'<td>'+val.ficNombre+'</td>';
 				tabla += 	'<td>'+val.ficNumero+'</td>';
-				tabla += 	'<td><a onclick="cargarModal('+val.idFicha+')"class="waves-light btn-small modalMediano-trigger"  style="background-color:#fc7323 color: black; font-weight: bold" href="#modalModificar"><i class="material-icons">border_color</i></a>';
-				tabla += 	'&nbsp<a onclick="cargarModalEliminar('+val.idFicha+')"class="waves-light btn-small modalMediano-trigger"  style="background-color:#fc7323 color: black; font-weight: bold" href="#modalEliminar"><i class="material-icons">delete</i></a></td>'
+				tabla += 	'<td><a onclick="cargarModal('+val.idFicha+')"class="waves-light btn-small modal-trigger"  style="background-color:#fc7323 color: black; font-weight: bold" href="#modalModificar"><i class="material-icons">border_color</i></a>';
+				tabla += 	'&nbsp<a onclick="cargarModalEliminar('+val.idFicha+')"class="waves-light btn-small modal-trigger"  style="background-color:#fc7323 color: black; font-weight: bold" href="#modalEliminar"><i class="material-icons">delete</i></a></td>'
 				tabla += '</tr>';
 			});
 
 
 			$('#tFicha').html(tabla);
 		})
-		.fail(function(retorno) {
-			console.log(retorno);
+		.fail(function() {
+			console.log("Error");
 
 		});		
 	}	

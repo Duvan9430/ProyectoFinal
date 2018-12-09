@@ -82,7 +82,7 @@ $(document).ready(function() {
 				tabla +='<tr>';
 		        tabla +=	'<td>'+eps.epsCodigo+'</td>';
 				tabla +=	'<td>'+eps.epsNombre+'</td>';
-                tabla +=	'<td><a  onclick="CargarModal('+eps.idEps+')" class="waves-light btn modalGrande-trigger" name="btnCargarModal" id="btnCargarModal" style="background-color:red color: green; font-weight:bold" href="#modalEditar"><i class="large material-icons">border_color</i> </a>';
+                tabla +=	'<td><a  onclick="CargarModal('+eps.idEps+')" class="waves-light btn modal-trigger" name="btnCargarModal" id="btnCargarModal" style="background-color:red color: green; font-weight:bold" href="#modalEditar"><i class="large material-icons">border_color</i> </a>';
 		        tabla +=	'&nbsp<a onclick="idEliminar('+eps.idEps+')" class="waves-light btn modal-trigger" name="btnCargarEliminar" id="btnCargarEliminar" style="background-color:red color: green; font-weight:bold" href="#modalEliminar"><i class="large material-icons">close</i> </a></td>';
 		        tabla +='</tr>';
 				});
@@ -103,7 +103,6 @@ $(document).ready(function() {
 		  	})
 		  	.done(function(json) {
 		  		console.log("success");
-		  		console.log(json.exito);
 		  		document.getElementById('txtEpsCodigoModal').value = json.epss[0].epsCodigo;
 				document.getElementById('txtEpsNombreModal').value = json.epss[0].epsNombre;
 		  		
@@ -125,12 +124,11 @@ $(document).ready(function() {
 		})
 		.done(function(json) {
 			console.log(json.exito);
-			alert('eliminar');
 			listarEps();
 			console.log("success");
 			
 		})
-		.fail(function() {
+		.fail(function(retorno) {
 			console.log(retorno);
 			listarEps();
 		});

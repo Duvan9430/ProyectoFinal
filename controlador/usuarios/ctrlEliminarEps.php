@@ -2,7 +2,7 @@
 require_once '../../modelo/Conexion.php';
 require_once '../../modelo/usuarios/MdlEps.php';
 require_once '../../entidad/usuarios/EntEps.php';
-	//error_reporting(1);
+	error_reporting(1);
 	
 
 	$idEps=$_POST['idEpsModal'];

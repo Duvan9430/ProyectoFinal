@@ -4,7 +4,7 @@
 	require_once '../../entidad/usuarios/fichaE.php';
 	
 	
-	//error_reporting(1);
+	error_reporting(1);
 
 	$retorno = array('mensaje');
 	$fichaE = new FichaE();

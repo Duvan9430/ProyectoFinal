@@ -55,11 +55,14 @@ if(isset($_SESSION['rolLogueado'])){
 </div>
   <!-- navbar -->
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="#!" class="modal-trigger tooltipped"><i class="material-icons left">home</i>Inicio</a></li>
+    <br>
+    <br>
+    <br>
+    <li><a href="#!" class="modal-trigger"><i class="material-icons left">home</i>Inicio</a></li>
     <li><a href="#!"><i class="material-icons left">fitness_center</i>Gimnasios</a></li>
     <li><a href="#!"><i class="material-icons left">public</i>Torneos</a></li>
     <li><a href="#!"><i class="material-icons left">info_outline</i>Contáctenos</a></li>
-    <li><a href="#login" class="modal-trigger tooltipped"><i class="material-icons left" href="#login">people</i>Iniciar sesión</a></li>
+    <li><a href="#login" class="modal-trigger"><i class="material-icons left" href="#login">people</i>Iniciar sesión</a></li>
   </ul>
   <div class="navbar-fixed">
     <nav class=" teal darken-1">

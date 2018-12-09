@@ -1,6 +1,6 @@
 <?php 
 
-require_once '../../modelo/conexion.php';
+require_once '../../modelo/Conexion.php';
 require_once '../../modelo/usuarios/tipoDocumentoM.php';
 require_once '../../entidad/usuarios/tipoDocumentoE.php';
 

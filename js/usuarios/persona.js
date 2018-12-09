@@ -79,7 +79,8 @@ function consultarMunicipioNacimiento() {
 
 
 $(document).ready(function() {
-
+    $(".tabs").tabs();
+    $(".modalGrande").modalGrande();
 	$(document).on('click','#btnCrear', function() {
 		var formulario = new FormData($('#crearPersonaFrm')[0]);
 			$.ajax({

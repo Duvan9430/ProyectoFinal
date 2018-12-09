@@ -1,7 +1,7 @@
 <?php 
-	require_once '../Modelo/Conexion.php';
-	require_once '../Modelo/MdlPersona.php';
-	require_once '../Entidad/EntPersona.php';
+	require_once '../../modelo/Conexion.php';
+	require_once '../../modelo/usuarios/MdlPersona.php';
+	require_once '../../entidad/usuarios/EntPersona.php';
 	error_reporting(1);
     $retorno =array('array');
     $entPersona = new EntPersona();

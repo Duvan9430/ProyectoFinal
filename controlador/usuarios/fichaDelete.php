@@ -3,7 +3,7 @@
 	require_once '../../entidad/usuarios/fichaE.php';
 	require_once '../../modelo/usuarios/fichaM.php';
 
-	
+	error_reporting(1);
 	$idFicha=$_POST['idFichaModal'];
 	$retorno = array('mensaje', 'arrayXFicha');
 

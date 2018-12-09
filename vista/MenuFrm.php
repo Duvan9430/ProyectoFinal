@@ -59,24 +59,7 @@ if(isset($_SESSION['rolLogueado'])){
 		<li><a class="waves-effect waves-orange" id="btnEventos" name="btnEventos"><i class="material-icons">event</i>Eventos</a></li>
 		<br>
 		<br>
-		<br>
 		<li><a class="waves-effect waves-red top" href="../controlador/loginCerrar.php" id="btnCerrarSesionM"><i class="material-icons">power_settings_new</i>Cerrar Sesión</a></li>
-		<!--<li><a class="subheader" href="#">Registros</a></li>
-
-		<li class="no-padding">
-			<ul class="collapsible collapsible-accordion">
-				<li class="bold">
-					<a class="collapsible-header waves-effect waves-teal">Dropdown<i class="material-icons">arrow_drop_down</i></a>
-					<div class="collapsible-body">
-						<ul>
-							<li><a href="#"><i class="material-icons">android</i>Link 1</a></li>
-							<li><a href="#"><i class="material-icons">assessment</i>Link 2</a></li>
-							<li><a href="#"><i class="material-icons">create</i>Link 3</a></li>
-						</ul>					
-					</div>
-				</li>
-			</ul>
-		</li>-->
 	</ul>
 
 

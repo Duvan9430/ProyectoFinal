@@ -1,29 +1,33 @@
-<?php
-class tipoDocumentoE
+<?php 
+/**
+* 
+*/
+class TipoDocumentoE
 {
-        	
-        	private $idTipoDocumento;
-        	private $tidNombre;
-            private $tidAbreviacion;
-            private $UsuarioCreacion;
-            private $UsuarioModificacion;
+	private $idTipoDocumeto;
+	private $tidNombre;
+    private $tidAbreviacion;
+	private $UsuarioCreacion;
+	private $UsuarioModificacion;
+
+   
 
     /**
      * @return mixed
      */
-    public function getIdTipoDocumento()
+    public function getIdTipoDocumeto()
     {
-        return $this->idTipoDocumento;
+        return $this->idTipoDocumeto;
     }
 
     /**
-     * @param mixed $idTipoDocumento
+     * @param mixed $idTipoDocumeto
      *
      * @return self
      */
-    public function setIdTipoDocumento($idTipoDocumento)
+    public function setIdTipoDocumeto($idTipoDocumeto)
     {
-        $this->idTipoDocumento = $idTipoDocumento;
+        $this->idTipoDocumeto = $idTipoDocumeto;
 
         return $this;
     }
