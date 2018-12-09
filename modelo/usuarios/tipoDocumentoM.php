@@ -42,7 +42,7 @@ class TipoDocumentoM
 	public function Read()
 	{
 		try {
-			$sentenciaSql = "SELECT * FROM tipoDocumento WHERE estado='A'";
+			$sentenciaSql = "SELECT * FROM tipodocumento WHERE estado='A'";
 			$resultado = $this->miConexion->query($sentenciaSql);
 			$this->retorno->estado = true;
         	$this->retorno->datos = $resultado;
@@ -60,7 +60,7 @@ class TipoDocumentoM
 	public function ReadXtipo(TipoDocumentoE $tipoDocumentoE)
 	{
 		try {
-			$sentenciaSql = "SELECT * FROM tipoDocumento WHERE idTipoDocumento=?";
+			$sentenciaSql = "SELECT * FROM tipodocumento WHERE idTipoDocumento=?";
 			$resultado=$this->miConexion->prepare($sentenciaSql);
 	        $resultado->bindParam(1, $tipoDocumentoE->getIdTipoDocumeto());
 	        $resultado->execute();

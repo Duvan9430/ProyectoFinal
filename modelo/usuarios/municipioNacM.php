@@ -13,7 +13,7 @@ class MunicipioM
 	public function read($id)
 	{
 		try{
-			$sentenciaSQL = "SELECT * FROM municipio INNER JOIN departamento ON municipio.idDepartamento=departamento.idDepartamento WHERE municipio.idDepartamento=?";
+			$sentenciaSQL = "SELECT municipio.idMunicipio,municipio.munNombre FROM municipio INNER JOIN departamento ON municipio.idDepartamento=departamento.idDepartamento WHERE municipio.idDepartamento=?";
 	        $resultado = $this->miConexion->prepare($sentenciaSQL);
 	        $resultado->bindParam(1, $id);
 	        $resultado->execute();

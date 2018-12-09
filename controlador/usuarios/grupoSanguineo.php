@@ -8,7 +8,7 @@
 	$grupoSanguineoE=new GrupoSanguineoE();
 	
 	$grupoSanguineoM = new GrupoSanguineoM();
-	$resultado = $grupoSanguineoM->consultarModal();
+	$resultado = $grupoSanguineoM->consultar();
 	$retorno["arrayGrupoSanguineo"] = $resultado->datos->fetchAll();
 
 	unset($grupoSanguineoM);

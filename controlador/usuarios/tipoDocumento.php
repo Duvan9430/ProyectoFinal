@@ -8,7 +8,7 @@
 	$tipoDocumentoE=new TipoDocumentoE();
 	
 	$tipoDocumentoM = new TipoDocumentom();
-	$resultado = $tipoDocumentoM->consultar();
+	$resultado = $tipoDocumentoM->Read();
 	$retorno["arrayTipoDocumento"] = $resultado->datos->fetchAll();
 
 	unset($tipoDocumentoM);

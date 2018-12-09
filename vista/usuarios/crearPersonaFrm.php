@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/Librerias/dataTables.material.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.min.normalmodal.css">
 	<link rel="stylesheet" type="text/css" href="../css/Librerias/material.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/usuarios/personaFrm.css">
 
 
 	<!-- Banner -->
@@ -212,6 +213,7 @@
 			        </div>         
 		      	</article>
 		      	<div id="TablaP">
+		      		&nbsp;
 				    <div class="row">
 					   	<div class="col-10">
 			               	<table class="table table-striped table-border centered display responsive-table" id="tablaPersona" style="width: 100%">

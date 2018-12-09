@@ -60,20 +60,20 @@ function consultarMunicipioNacimiento() {
 			$.ajax({
 				url: '../controlador/usuarios/municipioNac.php',
 				type: 'POST',
-				dataType: 'JSON',
+				dataType: 'json',
 				data: {idDepartamento: $('#departamentoId').val()},
 			})
 			.done(function(json) {
 				console.log("success");
 				var option=null;
 				option='<option value= "" disabled selected>Seleccione el municipio</option>';
-				$.each(json.arrayMunicipioRec, function(index, val) {
+				$.each(json, function(index, val) {
 					option += '<option value='+val.idMunicipio+'>'+val.munNombre+'</option>';
 				});
 				$('#txtIdMunicipioNacimiento').html(option);
 			})
-			.fail(function() {
-				console.log("error");
+			.fail(function(retorno) {
+				console.log(retorno);
 			});
 		}
 
@@ -122,7 +122,7 @@ $(document).ready(function() {
 		$("#perfil").html('<div class="row"><div class="input-field col s1"><i class="material-icons prefix">whatshot</i></div><div class="input-field col s3"><select name="txtIdFicha" id="txtIdFicha" class="browser-default"> </select></div><div class="input-field col s1"><i class="material-icons prefix">whatshot</i></div><div class="input-field col s3"><textarea rows="7" cols="60" id="txtAprDiscapacidad"></textarea>  <label for="icon_prefix">Discapacidad</label></div></div>')
 		consultarFicha();
 	}else if(valor==3){
-		$("#perfil").html('<div class="input-field col s3"><i class="material-icons prefix">local_hospital</i></div><div class="input-field col s4"><select name="txtIdArea" id="txtIdArea" class="browser-default">Area</select></div>');
+		$("#perfil").html('<div class="row"><div class="input-field col s1"><i class="material-icons prefix">local_hospital</i></div><div class="input-field col s4"><select name="txtIdArea" id="txtIdArea" class="browser-default">Area</select></div></div>');
 		consultarArea();
 	}
 });
@@ -187,7 +187,7 @@ $(document).ready(function() {
 				$('#tablaPersona').DataTable({
 		      	 dom: 'Bfrtip',
 		        	buttons: [
-		            	'excel', 'pdf', 'print'
+		            	'excel', 'print'
 		        	]  
 		    	});
 			})
@@ -326,8 +326,8 @@ $(document).ready(function() {
 				});
 				$('#txtIdTipoDocumento').html(option);
 			})
-			.fail(function() {
-				console.log("error");
+			.fail(function(retorno) {
+				console.log(retorno);
 			});
 		}
 		consultarTipoDocumento();
@@ -496,8 +496,8 @@ $(document).ready(function() {
 				});
 				$('#txtIdTipoDocumentoModal').html(option);
 			})
-			.fail(function() {
-				console.log("error");
+			.fail(function(retorno) {
+				console.log(retorno);
 			});
 		}
 		consultarTipoDocumentoModal();
@@ -624,8 +624,8 @@ $(document).ready(function() {
 				$('#txtIdFicha').html(option);
 				console.log(option);
 			})
-			.fail(function() {
-				console.log("error");
+			.fail(function(retorno) {
+				console.log(retorno);
 			});
 		}
 
