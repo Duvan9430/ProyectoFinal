@@ -68,7 +68,7 @@
 		          				<label for="last_name">Segundo apellido</label>
 		        			</div>
 		        			<div class="input-field col s1">
-		         				<i class="material-icons prefix">local_hospital</i>
+		         				<i class="material-icons prefix">folder_shared</i>
 		        			</div>
 		        			<div class="input-field col s3">   
 		          				<select name="txtIdTipoDocumento" id="txtIdTipoDocumento" class="browser-default"></select>
@@ -108,14 +108,14 @@
 				        		<label for="last_name">Dirección</label>
 				        	</div>
 				        	<div class="input-field col s1">
-				        		<i class="material-icons prefix">local_hospital</i>
+				        		<i class="material-icons prefix">domain</i>
 				        	</div>
 				        	<div class="input-field col s3">
 				        		<select name="txtIdMunicipioResidencia" id="txtIdMunicipioResidencia" class="browser-default">
 								</select>
 				        	</div>
 				        	<div class="input-field col s1">
-				        		<i class="material-icons prefix">phone</i>
+				        		<i class="material-icons prefix">account_circle</i>
 				        	</div>
 				        	<div class="input-field col s3">
 				        		<select name="txtIdGenero" id="txtIdGenero" class="browser-default">Genero</select>
@@ -141,13 +141,13 @@
 				        </div>	
 			    		<div class="col s12">
 			        		<div class="input-field col s1">
-			          			<i class="material-icons prefix">whatshot</i>
+			          			<i class="material-icons prefix">local_hospital</i>
 			        		</div>
 			        		<div class="input-field col s3">
 			        			<select name="txtIdGrupoSanguineo" id="txtIdGrupoSanguineo" class="browser-default"> </select>
 			        		</div>
 			        		<div class="input-field col s1">
-			          			<i class="material-icons prefix">whatshot</i>
+			          			<i class="material-icons prefix">local_hospital</i>
 			           		</div>
 			        		<div class="input-field col s3">
 			        			<select name="txtIdRegimen" id="txtIdRegimen" class="browser-default" ></select>
@@ -166,11 +166,11 @@
 			          			<select name="txtIdSede" id="txtIdSede" class="browser-default">Sede</select>
 			        		</div> 
 							<div class="input-field col s1">
-					     		<i class="material-icons prefix">local_hospital</i>
+					     		<i class="material-icons prefix">account_circle</i>
 							</div>
 							<div class="input-field col s3">
 								<select name="txtIdAprendiz" id="txtIdAprendiz" class="browser-default">
-					  				<option value="" disabled selected>Seleccione</option>
+					  				<option value="" disabled selected>Seleccione el rol</option>
 									<option value="2">Aprendiz</option>
 									<option value="3">Bienestar</option>  
 								</select>
@@ -191,7 +191,7 @@
 			            <div class="modalGrande-content">
 				            <h4>Modificar Persona</h4>
 				            <?php
-				            	include('formularioModificar.php');
+				            	include('formularioModificarPersonaFrm.php');
 				            ?>
 			            </div>
 				       	<div class="modalGrande-footer">
@@ -199,6 +199,8 @@
 				        </div>
 			    	</div>      
 	    		</article> 
+			</article>
+	</section>
 			    <!--fin modal Editar-->
 				<!--modal Eliminar-->
 				<article class="col s6 offset-s3">
@@ -215,41 +217,12 @@
 		      	<div id="TablaP">
 		      		&nbsp;
 				    <div class="row">
-					   	<div class="col-10">
-			               	<table class="table table-striped table-border centered display responsive-table" id="tablaPersona" style="width: 100%">
-			               		<thead>
-			               			<tr">
-				               			<th>Foto</th>	
-							            <th>Primer Nombre</th>
-						                <th>Segundo Nombre</th>
-						                <th>Primer Apellido</th>
-						                <th>Segundo Apellido</th>
-						                <th>Tipo Documento</th>
-						                <th>Número Identificación</th>
-						                <th>Fecha Nacimiento</th>
-						                <th>Municipio Nacimiento</th>
-						                <th>Dirección</th>
-						                <th>Municipio Residencia</th>
-						                <th>Genero</th>
-						                <th>EPS</th>
-						                <th>Telefono</th>
-						                <th>Celular</th>
-						                <th>RH</th>
-						                <th>Régimen</th>
-						                <th>E-mail</th>
-						                <th>Sede</th>
-							            <th>Opciones</th>
-							        </tr>
-			               		</thead>
-			               		<tbody id="bodyPersona" >
-			               		</tbody>
-			               	</table>
+					   	<div class="col-12" id="TablaPersonaP">
+			               	
 						</div>
 				   	</div>
 				</div">
-			</article>
 		</div>
-	</section>
     
     <script src="../js/Librerias/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="../js/Librerias/jquery.ambiance.js"></script>
@@ -267,6 +240,7 @@
 		$(document).ready(function(){
     	$('select').formSelect();
     	$(".tabs").tabs();
+    	$(".modal").modal();
 	  	});
 		$(document).ready(function() {
 	    	$('input#input_text, textarea#textarea2').characterCounter();

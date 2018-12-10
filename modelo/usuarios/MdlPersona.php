@@ -84,7 +84,7 @@
 		public function consultarModal($id)
 		{
 			try{
-				$consulta = "SELECT * FROM persona INNER JOIN municipio ON persona.idMunicipioResidencia = municipio.idMunicipio INNER JOIN tipodocumento ON persona.idTipoDocumento = tipodocumento.idTipoDocumento INNER JOIN gruposanguineo ON persona.idGrupoSanguineo = gruposanguineo.idGrupoSanguineo INNER JOIN genero ON persona.idGenero = genero.idGenero INNER JOIN sede ON persona.idSede = sede.idSede INNER JOIN eps ON persona.idEps = eps.idEps INNER JOIN regimen ON persona.idRegimen = regimen.idRegimen WHERE persona.Estado='A'";
+				$consulta = "SELECT * FROM persona INNER JOIN municipio ON persona.idMunicipioResidencia = municipio.idMunicipio INNER JOIN tipodocumento ON persona.idTipoDocumento = tipodocumento.idTipoDocumento INNER JOIN gruposanguineo ON persona.idGrupoSanguineo = gruposanguineo.idGrupoSanguineo INNER JOIN genero ON persona.idGenero = genero.idGenero INNER JOIN sede ON persona.idSede = sede.idSede INNER JOIN eps ON persona.idEps = eps.idEps INNER JOIN regimen ON persona.idRegimen = regimen.idRegimen WHERE persona.Estado='A' AND persona.idPersona = ?";
 	            $resultado = $this->miConexion->prepare($consulta);
 	            $resultado->bindParam(1,$id);
 	            $resultado->execute();
@@ -102,7 +102,7 @@
 
 		public function updatePersona(EntPersona $persona){
 			try{
-				$consulta = "UPDATE persona SET  idMunicipioNacimiento = ?,idMunicipioResidencia = ?, idTipoDocumento = ?, idGrupoSanguineo= ?, idGenero = ?, idSede = ?, idEps = ?, idRegimen = ?, perNit = ?, perPrimerNombre = ?, perSegundoNombre = ?, perPrimerApellido = ?, perSegundoApellido = ?, perFechaNacimiento = ?, perTelefono = ?, perCelular = ?, perCorreoElectronico = ?, perDireccion = ?,perFoto=?  WHERE idPersona = ?";
+				$consulta = "UPDATE persona SET  idMunicipioNacimiento = ?,idMunicipioResidencia = ?, idTipoDocumento = ?, idGrupoSanguineo= ?, idGenero = ?, idSede = ?, idEps = ?, idRegimen = ?, perNit = ?, perPrimerNombre = ?, perSegundoNombre = ?, perPrimerApellido = ?, perSegundoApellido = ?, perFechaNacimiento = ?,perCelular = ?, perCorreoElectronico = ?, perDireccion = ? WHERE idPersona = ?";
 	            $resultado = $this->miConexion->prepare($consulta);
 	            $resultado->bindParam(1, $persona->getIdMunicipioNacimiento());
 	            $resultado->bindParam(2, $persona->getIdMunicipioResidencia());
@@ -118,12 +118,10 @@
 	            $resultado->bindParam(12, $persona->getPerPrimerApellido());
 	            $resultado->bindParam(13, $persona->getPerSegundoApellido());
 	            $resultado->bindParam(14, $persona->getPerFechaNacimiento());
-	            $resultado->bindParam(15, $persona->getPerTelefono());
-	            $resultado->bindParam(16, $persona->getPerCelular());
-	            $resultado->bindParam(17, $persona->getPerCorreoElectronico());
-	            $resultado->bindParam(18, $persona->getPerDireccion());
-	            $resultado->bindParam(18, $persona->getPerFoto());
-	            $resultado->bindParam(19, $persona->getIdPersona());
+	            $resultado->bindParam(15, $persona->getPerCelular());
+	            $resultado->bindParam(16, $persona->getPerCorreoElectronico());
+	            $resultado->bindParam(17, $persona->getPerDireccion());
+	            $resultado->bindParam(18, $persona->getIdPersona());
 	            $resultado->execute();
 
 	            $this->retorno->estado = true;

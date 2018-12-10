@@ -157,33 +157,41 @@ $(document).ready(function() {
 				data: null,
 			})
 			.done(function(json) {
-				var tabla;
+				var tabla = '';
+				tabla += '<table class="table table-striped table-border centered display responsive-table" id="tablaPersona" style="width: 100%">';
+			    tabla += '<thead>';
+			    tabla += '<tr>';
+				tabla += '<th>Nombres y Apellidos</th>';
+				tabla += '<th>Tipo Documento</th>';
+				tabla += '<th>Número Identificación</th>';
+				tabla += '<th>Fecha Nacimiento</th>';
+				tabla += '<th>Dirección</th>';
+				tabla += '<th>Municipio Residencia</th>';
+				tabla += '<th>Celular</th>';
+				tabla += '<th>RH</th>';
+				tabla += '<th>E-mail</th>';
+				tabla += '<th>Opciones</th>';
+				tabla += '</tr>';
+			    tabla += '</thead>';
+				tabla += '<tbody id="bodyPersona" >';
 				$.each(json.array, function(index, persona) {
 					tabla +='<tr>';
-					tabla +=	'<td><img width=50px, height=70px, src="../Img/'+persona.perFoto+'"></td>';
-			        tabla +=	'<td>'+persona.perPrimerNombre+'</td>';
-					tabla +=	'<td>'+persona.perSegundoNombre+'</td>';
-					tabla +=	'<td>'+persona.perPrimerApellido+'</td>';
-					tabla +=	'<td>'+persona.perSegundoApellido+'</td>';
+			        tabla +=	'<td>'+persona.perPrimerNombre+' '+persona.perSegundoNombre+' '+persona.perPrimerApellido+' '+persona.perSegundoApellido+'</td>';
 			        tabla +=	'<td>'+persona.tidNombre+'</td>';
 			        tabla +=	'<td>'+persona.perNit+'</td>';
 			        tabla +=	'<td>'+persona.perFechaNacimiento+'</td>';
-			        tabla +=	'<td>'+persona.munNombre+'</td>';
 			        tabla +=	'<td>'+persona.perDireccion+'</td>';
 					tabla +=	'<td>'+persona.munNombre+'</td>';
-					tabla +=	'<td>'+persona.genNombre+'</td>';
-					tabla +=	'<td>'+persona.epsNombre+'</td>';
-					tabla +=	'<td>'+persona.perTelefono+'</td>';
 					tabla +=	'<td>'+persona.perCelular+'</td>';
 					tabla +=	'<td>'+persona.grsNombre+'</td>';
-					tabla +=	'<td>'+persona.regNombre+'</td>';
 					tabla +=	'<td>'+persona.perCorreoElectronico+'</td>';
-					tabla +=	'<td>'+persona.sedNombre+'</td>';
 	                tabla +=	'<td><a  onclick="CargarModal('+persona.idPersona+')" class="waves-light btn modalGrande-trigger" name="btnCargarModal" id="btnCargarModal" style="background-color:red color: green; font-weight:bold" href="#modalEditar"><i class="large material-icons">border_color</i> </a><br><br>';
 			        tabla +=	'&nbsp<a  onclick="idEliminar('+persona.idPersona+')" class="waves-light btn modal-trigger" name="btnCargarEliminar" id="btnCargarEliminar" style="background-color:red color: green; font-weight:bold" href="#modalEliminar"><i class="large material-icons">close</i> </a></td>';
 			        tabla +='</tr>';
 				});
-				$('#bodyPersona').html(tabla);
+			    tabla += '</tbody>';
+			    tabla += '</table>';
+				$('#TablaPersonaP').html(tabla);
 				$('#tablaPersona').DataTable({
 		      	 dom: 'Bfrtip',
 		        	buttons: [
@@ -201,7 +209,6 @@ $(document).ready(function() {
 
 
 		$(document).on("click","#btnCargarModal",function() {
-			//alert('HOLA');
 		  	$.ajax({
 		  		url: '../controlador/usuarios/ctrlConsultarModalPersona.php',
 		  		type: 'POST',
@@ -225,11 +232,9 @@ $(document).ready(function() {
 		  		document.getElementById('txtPerPrimerApellidoModal').value=json.personas[0].perPrimerApellido;
 		  		document.getElementById('txtPerSegundoApellidoModal').value=json.personas[0].perSegundoApellido;
 		  		document.getElementById('txtPerFechaNacimientoModal').value=json.personas[0].perFechaNacimiento;
-		  		document.getElementById('txtPerTelefonoModal').value=json.personas[0].perTelefono;
 		  		document.getElementById('txtPerCelularModal').value=json.personas[0].perCelular;
 		  		document.getElementById('txtPerCorreoElectronicoModal').value=json.personas[0].perCorreoElectronico;
 		  		document.getElementById('txtPerDireccionModal').value=json.personas[0].perDireccion;
-		  		document.getElementById('txtPerFotoModal').value=json.personas[0].perFoto;
 		  		
 		  	})
 		  	.fail(function() {
@@ -482,7 +487,7 @@ $(document).ready(function() {
 
 		function consultarTipoDocumentoModal() {
 			$.ajax({
-				url: '../controlador/usuarios/tipoDocumentoModal.php',
+				url: '../controlador/usuarios/tipoDocumentoPersonaModal.php',
 				type: 'POST',
 				dataType: 'JSON',
 				data: null,
@@ -533,7 +538,7 @@ $(document).ready(function() {
 			.done(function(json) {
 				console.log("success");
 				var option=null;
-				option='<option value= "" disabled selected>Seleccione el grupo sanguineo</option>';
+				option='<option value= "" selected>Seleccione el grupo sanguineo</option>';
 				$.each(json.arrayGrupoSanguineoModal, function(index, val) {
 					option += '<option value="'+val.idGrupoSanguineo+'">'+val.grsNombre+'</option>';
 				});

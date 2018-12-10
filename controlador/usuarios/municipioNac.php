@@ -6,7 +6,7 @@
 	$retorno = array();
 	$municipioE = new MunicipioE();
 	$municipioM = new MunicipioM();
-	$resultado = $municipioM->read(2);
+	$resultado = $municipioM->read($_POST['idDepartamento']);
 	$retorno=$resultado->datos->fetchAll(PDO::FETCH_ASSOC);
 
 	unset($municipioM);

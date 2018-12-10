@@ -3,7 +3,7 @@
 <head>
 	<title>Creación Participante</title>
 	<link rel="stylesheet" type="text/css" href="../css/Eventos/icon.css">
-	<link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.min.normalmodal.css">
 	<link rel="stylesheet" type="text/css" href="../css/Eventos/estilos.css">
 	<link rel="stylesheet" type="text/css" href="../css/Librerias/jquery-ui.css">
 </head>
@@ -57,8 +57,8 @@
 			<div class="participantes"></div> 
 		</div>
 	<!-- INICIO MODAL DE ELIMINAR-->
-	<div class="modal" tabindex="-1" role="dialog" id="modalEliminar">
-  	  	<div class="modal-dialog" role="document">
+	<div class="modal"  id="modalEliminar">
+  	  	<div class="modal-dialog" role="document" >
     		<div class="modal-content">
       			<div class="modal-header">
         			<h5 class="modal-title">Participantes</h5>
@@ -67,8 +67,8 @@
     				<p>Esta seguro de Eliminar este Participante.</p>
       			</div>
       			<div class="modal-footer">
-        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        			<button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminar">Eliminar</button>
+        			<button type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Cancelar</button>
+        			<button type="button" class="btn btn-primary modal-close"  data-dismiss="modal" id="btnEliminar">Eliminar</button>
       			</div>
     		</div>
   		</div>

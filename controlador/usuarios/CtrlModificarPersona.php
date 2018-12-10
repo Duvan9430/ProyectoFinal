@@ -20,7 +20,6 @@
 	$entPersona->setPerPrimerApellido($_POST["txtPerPrimerApellidoModal"]);
 	$entPersona->setPerSegundoApellido($_POST["txtPerSegundoApellidoModal"]);
 	$entPersona->setPerFechaNacimiento($_POST["txtPerFechaNacimientoModal"]);
-	$entPersona->setPerTelefono($_POST["txtPerTelefonoModal"]);
 	$entPersona->setPerCelular($_POST["txtPerCelularModal"]);
 	$entPersona->setPerCorreoElectronico($_POST["txtPerCorreoElectronicoModal"]);
 	$entPersona->setPerDireccion($_POST["txtPerDireccionModal"]);
