@@ -1,0 +1,17 @@
+.tabs .tab a{
+   color:#000;
+} /*Black color to the text*/
+
+.tabs .indicator {
+   background-color:#fc7323;
+} 
+
+.tabs .tab a:hover {
+   background-color:#ffcc80 !important;
+   color:#000 !important;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+   background-color:white !important;
+   color:#fc7323 !important;
+}

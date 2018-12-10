@@ -8,7 +8,7 @@
 	$fichaE=new FichaE();
 	
 	$fichaM = new FichaM();
-	$resultado = $fichaM->consultar();
+	$resultado = $fichaM->Read();
 	$retorno["arrayFicha"] = $resultado->datos->fetchAll();
 
 	unset($fichaM);

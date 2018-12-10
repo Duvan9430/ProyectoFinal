@@ -1,10 +1,10 @@
 <?php 
-	require_once '../../modelo/conexion.php';
+	require_once '../../modelo/Conexion.php';
 	require_once '../../entidad/usuarios/tipoDocumentoE.php';
 	require_once '../../modelo/usuarios/tipoDocumentoM.php';
 	
 	
-	//error_reporting(1);
+	error_reporting(1);
 	$idDocumento=$_POST['txtIdTipoIdentidad'];
 	$tidNombre=$_POST['tidNombreMod'];
 	$tidAbreviacion=$_POST['tidAbreviacionMod'];

@@ -31,7 +31,7 @@
     
     	public function consultarEps(){
 			try{
-				$consulta = "SELECT * FROM eps";
+				$consulta = "SELECT * FROM eps WHERE estado = 'A'";
 	            $resultado9 = $this->miConexion->query($consulta);
 
 	            $this->retorno->estado = true;

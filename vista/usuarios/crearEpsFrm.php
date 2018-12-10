@@ -14,42 +14,46 @@
 <body>     
 	<section class="container">
 		<div class="row">
-					<h3 class="center">Eps</h3>
+					<h1 class="center-align">Eps</h1>
 					<!--Form 1-->
 					<div class="fixed-action-btn horizontal">
-				        <a class="btn-floating btn-large btn-principal waves-effect waves-light btn modalGrande-trigger left-align posicion" href="#modal1">
+				        <a class="btn-floating btn-large btn-principal waves-effect waves-light btn modal-trigger left-align posicion" href="#modal1">
 				            <i class="large material-icons">add</i>
 				        </a>
 		            </div>
 				<article class="col s12 ">
 						<article class="col s6 offset-s3">  
-				            <div id="modal1" class="modalGrande">
-					            <div class="modalGrande-content">
-						            <h4>Agregar Eps</h4>
+				            <div id="modal1" class="modal">
+					            <div class="modal-content">
+						            <h5 class="header center">Agregar Eps</h5>
+						            &nbsp;
 						            <?php
 						             include('formularioCrear.php');
 						            ?>
 					            </div>
 						        <div class="center-align">
-         						  <a id="btnCrear" name="btnCrear" style="background-color:#fc7323;" class="modalGrande-close waves-effect waves-green btn-flat" type="button"><i class="material-icons">send</i> Guardar</a>
+         						  <a id="btnCrear" name="btnCrear" style="background-color:#fc7323;" class="-close waves-effect waves-green btn-flat" type="button"> Guardar<i class="material-icons right">send</i></a>
         						  </div>
+        						  <br>
 						        </div>
 				            </div>  
 					    </article> 
                        <!--modal Editar-->
 					    <article class="col s6 offset-s3">
 					       
-				            <div id="modalEditar" class="modalGrande">
-					            <div class="modalGrande-content">
-						            <h4>Modificar Eps</h4>
+				            <div id="modalEditar" class="modal">
+					            <div class="modal-content">
+						            <h5 class="header center"> Modificar Eps</h5>
+						            &nbsp;
 						            <?php
 						             include('formularioModificar.php');
 						            ?>
 					            </div>
 
-						       <div class="modalGrande-footer">
+						       <div class="modal-footer">
 								<div class="center-align">
-         						  <a id="btnModificar" name="btnModificar" style="background-color:#fc7323;" class="modalGrande-close waves-effect waves-green btn-flat" type="button"><i class="material-icons">send</i> Guardar</a>
+         						  <a id="btnModificar" name="btnModificar" style="background-color:#fc7323;" class="modal-close waves-effect waves-green btn-flat" type="button"><i class="material-icons right">send</i> Guardar</a>
+         						  <br>
         						  </div> 
         						</div>
 					    </article> 
@@ -59,7 +63,8 @@
 				       
 				        <div id="modalEliminar" class="modal">
 				          <div class="modal-content">
-				            <h4>Seguro desea eliminar la Eps</h4>
+				            <h5 class="header center">¿Esta seguro de eliminar esta EPS?</h5>
+				            &nbsp;
 				          <div  id="Eliminar"></div>
 				          </div>
 				          <div class="modal-footer">
@@ -97,8 +102,8 @@
 		 $(document).ready(function(){
     		$('select').formSelect();
   		});
-		 	$(".modalGrande").modalGrande();
-		 	$(".modal").modal();
+
+		$(".modal").modal();
 		   $(document).ready(function() {
     		$('input#input_text, textarea#textarea2').characterCounter();
   		});

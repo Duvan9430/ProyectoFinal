@@ -1,5 +1,5 @@
 <form  id="fichaModificarFrm"> 
-  <input type="text" name="txtIdFicha" id="txtIdFicha">       
+  <input type="text" name="txtIdFicha" id="txtIdFicha" hidden>       
   <div class="input-field">
     <i class="material-icons prefix">local_hospital</i>
     <label for="text">Nombre</label>

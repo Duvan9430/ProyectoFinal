@@ -24,6 +24,7 @@ function cargarModalEliminar(idTipoDocumento){
 
 
 $(document).ready(function(){
+	$(".modal").modal();
 	function ModalModificarrr() {
       $('#Modificar').load('../vista/usuarios/tipoDocumentoUpdateFrm.php')
 	}
@@ -39,10 +40,8 @@ $(document).ready(function(){
 	$(document).on('click','#btnGuardar', function() {
 		var nombre_tipo_documento=$('#tidNombre').val();
 		var abreviacion_documento=$('#tidAbreviacion').val();
-		console.log(nombre_tipo_documento);
-		console.log(abreviacion_documento);
 		
-		if(nombre_tipo_documento && abreviacion_documento ){
+		if(nombre_tipo_documento !=null && abreviacion_documento !=null){
 				$.ajax({
 				url: '../controlador/usuarios/tipoDocumentoCreate.php',
 				type: 'POST',
@@ -67,7 +66,7 @@ $(document).ready(function(){
 			});
 		}
 		else{
-		  	alert("campo vacío");
+		  	M.toast({html: "Llene todos los campos"});
 		}
 	})
 
@@ -88,8 +87,8 @@ function tablaTipoDocumento() {
 				tabla += '<tr>';
 				tabla += 	'<td>'+val.tidNombre+'</td>';
 				tabla += 	'<td>'+val.tidAbreviacion+'</td>';
-				tabla += 	'<td><a onclick="cargarModal('+val.idTipoDocumento+')"class="waves-light btn modalMediano-trigger"  style="background-color:#fc7323 color: black; font-weight: bold" href="#modalModificar"><i class="material-icons">border_color</i></a>';
-				tabla += 	'&nbsp<a onclick="cargarModalEliminar('+val.idTipoDocumento+')"class="waves-light btn modalMediano-trigger"  style="background-color:#fc7323 color: black; font-weight: bold" href="#modalEliminar"><i class="material-icons">delete</i></a></td>';
+				tabla += 	'<td><a onclick="cargarModal('+val.idTipoDocumento+')"class="waves-light btn modal-trigger"  style="background-color:#fc7323 color: black; font-weight: bold" href="#modalModificar"><i class="material-icons">border_color</i></a>';
+				tabla += 	'&nbsp<a onclick="cargarModalEliminar('+val.idTipoDocumento+')"class="waves-light btn modal-trigger"  style="background-color:#fc7323 color: black; font-weight: bold" href="#modalEliminar"><i class="material-icons">delete</i></a></td>';
 				tabla += '</tr>';
 			});
 
