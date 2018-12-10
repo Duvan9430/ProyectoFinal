@@ -97,8 +97,8 @@ function tablaFicha() {
 
 			$('#tFicha').html(tabla);
 		})
-		.fail(function() {
-			console.log("Error");
+		.fail(function(retorno) {
+			console.log(retorno);
 
 		});		
 	}	

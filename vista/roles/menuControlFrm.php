@@ -6,7 +6,7 @@
 		      	<div class="col s6">
 		        	<div class="card">
 		         		<div class="card-image">
-		            		<img src="../img/IMC.PNG">
+		            		<img src="../img/imc.jpg">
 		          		</div>
 		          		<div class="card-action">
 		            		<center><a class="btn botonMenu" id="btnIMCM" name="btnIMCM">IMC</a></center>
@@ -86,7 +86,7 @@
 		      	<div class="col s6">
 		        	<div class="card">
 		         		<div class="card-image">
-		            		<img src="../img/mi rutina.jpg">
+		            		<img src="../img/clasi.jpg">
 		          		</div>
 		          		<div class="card-action">
 		            		<center><a class="btn botonMenu" id="btnClasificacionEjercicioM" name="btnClasificacionEjercicioM">Clasificacion Ejercicio</a></center>
@@ -116,7 +116,7 @@
 		      	<div class="col s6">
 		        	<div class="card">
 		         		<div class="card-image">
-		            		<img src="../img/IMC.PNG">
+		            		<img src="../img/img.jpg">
 		          		</div>
 		          		<div class="card-action">
 		            		<center><a class="btn botonMenu" id="btnIMCM" name="btnIMCM">IMC</a></center>
@@ -196,7 +196,7 @@
 		      	<div class="col s6">
 		        	<div class="card">
 		         		<div class="card-image">
-		            		<img src="../img/mi rutina.jpg">
+		            		<img src="../img/clasi.jpg">
 		          		</div>
 		          		<div class="card-action">
 		            		<center><a class="btn botonMenu" id="btnClasificacionEjercicioM" name="btnClasificacionEjercicioM">Clasificacion Ejercicio</a></center>

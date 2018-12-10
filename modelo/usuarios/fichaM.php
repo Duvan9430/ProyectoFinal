@@ -94,8 +94,8 @@ class FichaM
 	        $this->retorno->datos = null;
 			$this->retorno->mensaje = "Error: " .$e->getMessage();
 		}
-<<<<<<< HEAD
-		public function createFicha(FichaE $ficha){
+
+	 	function createFicha(FichaE $ficha){
 			try {
 				$sentenciaSql = "INSERT INTO ficha VALUES (null, ?, ?, 'A', NOW(), NOW(), -1, -1)";
 				$resultado = $this->miConexion->prepare($setenciaSql);
@@ -112,9 +112,9 @@ class FichaM
 	            $this->retorno->mensaje = "Error: " .$e->getMessage();
 			}
 		}
-=======
+
 		return $this->retorno;
->>>>>>> 047132efcb86786a64ce7856f17d85662856330c
+
 	}
 
 
