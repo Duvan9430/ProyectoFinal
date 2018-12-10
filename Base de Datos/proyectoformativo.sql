@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `proyectoformativo`
 --
-CREATE DATABASE IF NOT EXISTS `proyectoformativo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
+CREATE DATABASE IF NOT EXISTS `proyectoformativo2` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
 USE `proyectoformativo`;
 
 -- --------------------------------------------------------

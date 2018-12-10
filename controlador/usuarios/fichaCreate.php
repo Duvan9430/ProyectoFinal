@@ -4,12 +4,10 @@
 	require_once '../../entidad/usuarios/fichaE.php';
 	
 	
-	//error_reporting(1);
+	error_reporting(1);
 
 	$retorno = array('mensaje');
 	$fichaE = new FichaE();
-	$usuarioCreacion=-1;
-	$usuarioModificacion=-1;
 	$ficNombre=$_POST['ficNombre'];
 	$ficNumero=$_POST['ficNumero'];
 	
@@ -23,7 +21,7 @@
 
 	$fichaM = new FichaM();
 	
-	$resultado = $fichaM->crearFicha($fichaE);
+	$resultado = $fichaM->createFicha($fichaE);
 	$retorno["mensaje"] = $resultado->mensaje;
 
 	unset($fichaE);
