@@ -29,3 +29,11 @@ $(document).on("click","#btnEjerMusM",function(){
 $(document).on("click","#btnRutinasAprendizM",function(){
 	$("#contenido").load("../vista/Rutinas/frmConsultarRutinaAprendizFrm.php");
 })
+
+$(document).on("click","#btnRutinasGeneralM",function(){
+	$("#contenido").load("../vista/Rutinas/RutinasFrm.php");
+})
+
+$(document).on("click","#btnClasificacionEjercicioM",function(){
+	$("#contenido").load("../vista/Rutinas/ejerciciosXclasificacionFrm.php");
+})

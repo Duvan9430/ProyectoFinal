@@ -79,10 +79,20 @@
 		            		<img src="../img/mi rutina.jpg">
 		          		</div>
 		          		<div class="card-action">
-		            		<center><a class="btn botonMenu" id="btnRutinasAprendizM" name="btnRutinasAprendizM">Mis Rutinas</a></center>
+		            		<center><a class="btn botonMenu" id="btnRutinasGeneralM" name="btnRutinasGeneralM">Rutinas</a></center>
 		          		</div>
 		        	</div>
-		      	</div>   
+		      	</div>
+		      	<div class="col s6">
+		        	<div class="card">
+		         		<div class="card-image">
+		            		<img src="../img/mi rutina.jpg">
+		          		</div>
+		          		<div class="card-action">
+		            		<center><a class="btn botonMenu" id="btnClasificacionEjercicioM" name="btnClasificacionEjercicioM">Clasificacion Ejercicio</a></center>
+		          		</div>
+		        	</div>
+		      	</div>      
 	    	</div>
 	    ';
 	}else if($_SESSION['rolLogueado'] == '4'){
@@ -173,6 +183,26 @@
 		          		</div>
 		        	</div>
 		      	</div>
+		      	<div class="col s6">
+		        	<div class="card">
+		         		<div class="card-image">
+		            		<img src="../img/mi rutina.jpg">
+		          		</div>
+		          		<div class="card-action">
+		            		<center><a class="btn botonMenu" id="btnRutinasGeneralM" name="btnRutinasGeneralM">Rutinas</a></center>
+		          		</div>
+		        	</div>
+		      	</div>
+		      	<div class="col s6">
+		        	<div class="card">
+		         		<div class="card-image">
+		            		<img src="../img/mi rutina.jpg">
+		          		</div>
+		          		<div class="card-action">
+		            		<center><a class="btn botonMenu" id="btnClasificacionEjercicioM" name="btnClasificacionEjercicioM">Clasificacion Ejercicio</a></center>
+		          		</div>
+		        	</div>
+		      	</div>  
 	    	</div>
 		';
 	}
