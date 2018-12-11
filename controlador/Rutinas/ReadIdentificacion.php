@@ -1,7 +1,7 @@
 <?php 
 
 	require_once "../../modelo/Conexion.php";
-	require_once "../../modelo/Rutinas/IngresoGimnasioM.php";
+	require_once ".../../modelo/Rutinas/IngresoGimnasioM.php";
 
 	error_reporting(0);
 

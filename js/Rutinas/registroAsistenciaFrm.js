@@ -15,10 +15,10 @@ $(document).ready(function() {
 
 	$(document).on('click', '#btnEnviar', function() {
 		$.ajax({
-			url: '../controlador/Rutinas/InsertAsistencia.php',
+			url: '../../controlador/Rutinas/InsertAsistencia.php',
 			type: 'POST',
 			dataType: 'JSON',
-			data: $('#frmAsistencia').serialize(),
+			data: $('#frmAsistencia').serialize() + '&crudAsistencia=' +  'InsertAsistencia',
 		})
 		.done(function(json) {
 			M.toast({html: json.mensaje});
@@ -29,10 +29,10 @@ $(document).ready(function() {
 	});
 	function autocompletar() {
 		$.ajax({
-			url: '../controlador/Rutinas/ReadIdentificacion.php',
+			url: '../../controlador/Rutinas/InsertAsistencia.php',
 			type: 'POST',
 			dataType: 'JSON',
-			data: null,
+			data: {crudAsistencia: 'ReadIdentificacion'},
 		})
 		.done(function(retorno) {
 			//console.log("success");
@@ -46,8 +46,8 @@ $(document).ready(function() {
 	        });
 
 		})
-		.fail(function() {
-			console.log("error");
+		.fail(function(json) {
+			console.log(json);
 		})		
-	}	
+	}
 });
