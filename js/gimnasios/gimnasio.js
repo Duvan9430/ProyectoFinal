@@ -11,7 +11,7 @@ function idEliminar(idGimnasio){
 $(document).ready(function() {
 	var sede = "";
 	listarSede();
-
+	$(".modal").modal();
 	//Listar Sede
 	function listarSede(){
 		$.ajax({
@@ -36,6 +36,7 @@ $(document).ready(function() {
 	// Función Crear Gimnasio
 	$(document).on('click','#btnCrear', function() {
 		var formulario = new FormData($('#crearGimnasioFrm')[0]);
+
 			$.ajax({
 				url: '../controlador/gimnasios/ctrlCreateGimnasio.php',
 				type: 'POST',
@@ -51,27 +52,22 @@ $(document).ready(function() {
 				console.log("success");
 				listarGimnasio();
 				$('#crearGimnasioFrm').trigger("reset");
-
-				$.ambiance({
-				message: "Gimnasio creado con exito",
-				title: json.mensaje,
-				type:"primary",
-				timeout:10,
-
-			});
-			listarGimnasio();
+				M.toast({html: 'Gimnasio creado con exito!'})
+				listarGimnasio();
 
 			})
 
 			.fail(function(json) {
 				console.log("error");
 			})
-
+			
+      		
 		})
 
 	//Funcion Modificar Registro
 	$(document).on('click', '#btnModificar', function(){
 		var formulario = new FormData($('#modificarGimnasioFrm')[0]);
+
 		$.ajax({
 			url: '../controlador/gimnasios/ctrlModificarGimnasio.php',
 			type: 'POST',
@@ -84,18 +80,16 @@ $(document).ready(function() {
 		.done(function(json) {
 			console.log("success");
 			listarGimnasio();
-
-			$.ambiance({
-				message: "Gimnasio modificado con exito",
-				title: json.mensaje,
-				type:"primary",
-				timeout:10,
-			})
+			M.toast({html: 'Gimnasio Modificado con exito!'})
+	
 		.fail(function(json) {
 			console.log("error");
 		})
 		})
+		
 	})
+	$(".modal").modal();
+	$(".modalGrande").modalGrande();
 
 	//Tabla con registros de la base de datos
 	function listarGimnasio(){
@@ -107,7 +101,7 @@ $(document).ready(function() {
 				data: null,
 			})
 			.done(function(json) {
-				var tabla;
+				var tabla = "";
 				$.each(json.array, function(index, gimnasio) {
 				tabla +='<tr>';
 		        tabla +='<td>'+gimnasio.gimNombre+'</td>';
@@ -160,12 +154,8 @@ $(document).ready(function() {
 			console.log("success");
 			console.log(json.mensaje);
 
-			$.ambiance({
-				message: "Gimnasio eliminado con exito",
-				title: json.mensaje,
-				type:"error",
-				timeout:10,
-			});
+			M.toast({html: 'Gimnasio Eliminado con exito!'})
+			
 			listarGimnasio();
 		})
 		.fail(function(retorno) {

@@ -8,7 +8,7 @@ error_reporting(1);
 	$modelos = new RutinasAprendiz();
 
 	$resultado = $modelos->ConsultarAprendizRutina();
-	$retorno = $resultado->datos->fetchAll(PDO::FETCH_ASSOC);
+	$retorno = $resultado->datos->fetchAll();
 
 	echo json_encode($retorno);
 

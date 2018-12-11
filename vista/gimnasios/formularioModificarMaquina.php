@@ -8,18 +8,10 @@
 
 					              <label for="icon_prefix2">Id</label>
 					          </div>
-					          <!--Txt Nombre-->
-                                
-					          <div class="input-field col s6">
-                               <label >Nombre Maquina</label>
-					            <!--   <i class="material-icons prefix">mode_edit</i>-->
+					          
 
-					              <textarea id="txtmaqNombreModal" name="txtmaqNombreModal" class="materialize-textarea"></textarea>
-
-					          </div>
-
-					          <!--Cargar imagenes-->
-					            <div class="file-field input-field col s6">
+					          <!--Cargar imagenes
+					            <div hidden class="file-field input-field col s6">
 					                <div class="btn teal darken-3">
 					                  <span>Imagen</span>
 					                  <input type="file" id="txtmaqImagenModal " name="txtmaqImagenModal">
@@ -28,8 +20,18 @@
 					                  <input class="file-path validate"  type="text" placeholder="Seleccione El Archivo Correspondiente" required>
 					                </div>
 					            </div>
+					            -->
 					          </div>
 					          <div class="row">
+					          	<!--Txt Nombre-->
+                                
+					          <div class="input-field col s6">
+                               <label >Nombre Maquina</label>
+					            <!--   <i class="material-icons prefix">mode_edit</i>-->
+
+					              <textarea id="txtmaqNombreModal" name="txtmaqNombreModal" class="materialize-textarea"></textarea>
+
+					          </div>
 					          <!--Txt codigo maaquina-->
 					          <div class="input-field col s6">
 					             <!--  <i class="material-icons prefix">mode_edit</i>-->

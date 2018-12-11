@@ -34,7 +34,7 @@
     
     	public function consultarMaquina(){
 			try{
-				$consulta = "SELECT * FROM maquina WHERE Estado = 'A'";
+				$consulta = "SELECT * FROM maquina WHERE estado = 'A'";
 	            $resultado = $this->miConexion->query($consulta);
 
 	            $this->retorno->estado = true;
@@ -69,14 +69,14 @@
 
 		public function updateMaquina(EntMaquina $maquina){
 			try{
-				$consulta = "UPDATE maquina SET maqNombre = ?, maqCodigo = ?, maqDescripcion = ?, maqObservacion= ?, maqImagen = ? WHERE idMaquina = ?";
+				$consulta = "UPDATE maquina SET maqNombre = ?, maqCodigo = ?, maqDescripcion = ?, maqObservacion= ? WHERE idMaquina = ?";
 	            $resultado = $this->miConexion->prepare($consulta);
 	            $resultado->bindParam(1, $maquina->getMaqNombre());
 	            $resultado->bindParam(2, $maquina->getMaqCodigo());
 	            $resultado->bindParam(3, $maquina->getMaqDescripcion());
 	            $resultado->bindParam(4, $maquina->getMaqObservacion());
-	            $resultado->bindParam(5, $maquina->getMaqImagen());
-	            $resultado->bindParam(6, $maquina->getIdMaquina());
+	            //$resultado->bindParam(5, $maquina->getMaqImagen());
+	            $resultado->bindParam(5, $maquina->getIdMaquina());
 	            $resultado->execute();
 
 	            $this->retorno->estado = true;

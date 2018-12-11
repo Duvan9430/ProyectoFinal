@@ -53,7 +53,7 @@
 		          		</div>
 		        	</div>
 		      	</div>
-		      	<div class="col s6">
+		      	<!--<div class="col s6">
 		        	<div class="card">
 		          		<div class="card-image">
 		            		<img src="../img/correo.jpg" style="width: 70%; height: 50%">
@@ -62,7 +62,7 @@
 		           			<center><a class="btn botonMenu" id="btnCorreoM" name="btnCorreoM">Enviar Correo</a></center>
 		          		</div>
 		        	</div>
-		      	</div>  
+		      	</div> -->
 		      	<div class="col s6">
 		        	<div class="card">
 		          		<div class="card-image" >
@@ -90,6 +90,16 @@
 		          		</div>
 		          		<div class="card-action">
 		            		<center><a class="btn botonMenu" id="btnClasificacionEjercicioM" name="btnClasificacionEjercicioM">Clasificacion Ejercicio</a></center>
+		          		</div>
+		        	</div>
+		      	</div>
+		      	<div class="col s6">
+		        	<div class="card">
+		         		<div class="card-image">
+		            		<img src="../img/clasi.jpg" style="width: 70%; height: 50%">
+		          		</div>
+		          		<div class="card-action">
+		            		<center><a class="btn botonMenu" id="btnCrearRutinaM" name="btnClasificacionEjercicioM">Crear Rutina</a></center>
 		          		</div>
 		        	</div>
 		      	</div>      
@@ -163,7 +173,7 @@
 		          		</div>
 		        	</div>
 		      	</div>
-		      	<div class="col s6">
+		      	<!--<div class="col s6">
 		        	<div class="card">
 		          		<div class="card-image">
 		            		<img src="../img/correo.jpg" style="width: 70%; height: 50%">
@@ -172,7 +182,7 @@
 		           			<center><a class="btn botonMenu" id="btnCorreoM" name="btnCorreoM">Enviar Correo</a></center>
 		          		</div>
 		        	</div>
-		      	</div>  
+		      	</div>-->  
 		      	<div class="col s6">
 		        	<div class="card">
 		          		<div class="card-image">
@@ -202,7 +212,17 @@
 		            		<center><a class="btn botonMenu" id="btnClasificacionEjercicioM" name="btnClasificacionEjercicioM">Clasificacion Ejercicio</a></center>
 		          		</div>
 		        	</div>
-		      	</div>  
+		      	</div> 
+		      			      	<div class="col s6">
+		        	<div class="card">
+		         		<div class="card-image">
+		            		<img src="../img/clasi.jpg" style="width: 70%; height: 50%">
+		          		</div>
+		          		<div class="card-action">
+		            		<center><a class="btn botonMenu" id="btnCrearRutinaM" name="btnClasificacionEjercicioM">Crear Rutina</a></center>
+		          		</div>
+		        	</div>
+		      	</div>       
 	    	</div>
 		';
 	}

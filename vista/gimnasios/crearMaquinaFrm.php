@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
 	<meta charset="UTF-8">
 	<title>Adicionar Maquinas</title>
   	<link rel="stylesheet" href="../css/Librerias/materialize.min.css">
@@ -9,10 +6,6 @@
 	 <!-- Libreria Materialize -->
      <link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.css">
      <!-- Estilos de la Pagina -->
-     <link rel="stylesheet" type="text/css" href="../css/gimnasios/estilos.css"> 
-</head>
-<body>
-<br>
 	<section class="container">
 		<div class="card ">
 			<div class="card-body">
@@ -88,7 +81,6 @@
 	<script type="text/javascript" src="../js/Librerias/jquery.ambiance.js"></script>
 	<script type="text/javascript" src="../js/Librerias/materialize - copia.js"></script>
 	<script language="javascript" type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="../js/gimnasios/Global.js"></script> 
 	<script>
  
 		 

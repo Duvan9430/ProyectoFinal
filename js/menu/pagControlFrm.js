@@ -37,3 +37,7 @@ $(document).on("click","#btnRutinasGeneralM",function(){
 $(document).on("click","#btnClasificacionEjercicioM",function(){
 	$("#contenido").load("../vista/Rutinas/ejerciciosXclasificacionFrm.php");
 })
+
+$(document).on("click","#btnCrearRutinaM",function(){
+	$("#contenido").load("../vista/Rutinas/rutinaFrm.php");
+})

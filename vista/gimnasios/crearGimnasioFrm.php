@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Adicionar Gimnasios</title>
   <link rel="stylesheet" href="../css/Librerias/materialize.min.css">
   <link rel="stylesheet" href="../css/Librerias/bitnami.css">
   <link rel="stylesheet" type="text/css" href="../css/Librerias/jquery.ambiance.css">
   <link rel="stylesheet" type="text/css" href="../css/Librerias/materialize.css">
-  <link rel="stylesheet" type="text/css" href="../css/gimnasios/estilos.css">
-</head>
-<body>
-<br>
   <section class="container">
     <div class="card">
       <div class="card-body">
@@ -77,13 +68,9 @@
       </div>
     </div>
   </section>
-</body>
-<!--Tabla información de la BD-->
-<br><br><br>
-<!--Js-->
+
 <script type="text/javascript" src="../js/Librerias/jquery-3.3.1.js"></script>
 <script type="text/javascript"src="../js/Librerias/jquery.ambiance.js"></script>
 <script type="text/javascript" src="../js/Librerias/materialize - copia.js"></script>
 <script type="text/javascript" src="../js/gimnasios/Global.js"></script>
 <script type="text/javascript" src="../js/gimnasios/gimnasio.js"></script>
-</html>

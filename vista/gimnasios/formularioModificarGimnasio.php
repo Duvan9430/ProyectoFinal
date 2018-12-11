@@ -56,7 +56,7 @@
                 ?>
               </select>
           </div>
-          <!--Cargar imagenes gimnasio-->
+          <!--Cargar imagenes gimnasio
             <div class="file-field input-field col s6">
                 <div class="btn teal darken-3">
                   <span>Imagen</span>
@@ -65,7 +65,7 @@
                 <div class="file-path-wrapper">
                   <input class="file-path validate" type="text" placeholder="Seleccione El Archivo Correspondiente" required>
                 </div>
-            </div>
+            </div>-->
           </div>
 
           <div class="row">

@@ -93,13 +93,13 @@
 		public function updateGimnasio(EntGimnasio $gimnasio){
 			try {
 				
-				$consulta = "UPDATE gimnasio SET  idSede = ?, gimNombre = ?, gimDescripcion = ?, gimImagen = ? WHERE idGimnasio = ? ";
+				$consulta = "UPDATE gimnasio SET  idSede = ?, gimNombre = ?, gimDescripcion = ? WHERE idGimnasio = ? ";
 				$resultado = $this->miConexion->prepare($consulta);
 				$resultado->bindParam(1, $gimnasio->getIdSede());
 				$resultado->bindParam(2, $gimnasio->getGimNombre());
 				$resultado->bindParam(3, $gimnasio->getGimDescripcion());
-				$resultado->bindParam(4, $gimnasio->getGimImagen());
-				$resultado->bindParam(5, $gimnasio->getIdGimnasio());
+				//$resultado->bindParam(4, $gimnasio->getGimImagen());
+				$resultado->bindParam(4, $gimnasio->getIdGimnasio());
 
 				$resultado->execute();
 				$this->retorno->estado = true;

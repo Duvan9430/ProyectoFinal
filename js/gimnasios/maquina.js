@@ -12,9 +12,16 @@ function idEliminar(idMaquina){
 
 
 $(document).ready(function() {
+	$(".modal").modal();
+	$(".modalGrande").modalGrande();
 
 	$(document).on('click','#btnCrearMaq', function() {
 		var formulario = new FormData($('#crearMaquinaFrm')[0]);
+		if ($('#txtmaqNombre').val() !="" 
+      	&& $('#txtmaqImagen').val() != "" 
+     	&& $('#txtmaqCodigo').val() != ""
+      	&& $('#txtmaqDescripcion').val() !="" 
+      	&& $('#txtmaqObservacion').val() !="" ){
 	 
 			$.ajax({
 				url: '../controlador/gimnasios/ctrlCreateMaquina.php',
@@ -30,23 +37,25 @@ $(document).ready(function() {
 				listarMaquina();
 				$('#crearMaquinaFrm').trigger("reset");
 
-				$.ambiance({
-					message: "Maquina creada con exito",
-					title: json.mensaje,
-					type:"primary",
-					timeout:10,
-		        });
+				 M.toast({html: 'Máquina creada con exito!'})
 			})
 
 			.fail(function() {
 				console.log("error");
 			})
-     		});
+			}else{
+      			M.toast({html: 'Por favor complete los campos!'})
+      		}
+     	});
 
 
 	$(document).on('click', '#btnModificar', function() {
 		var formulario = new FormData($('#formularioModificar')[0]);
-
+		if ($('#txtmaqNombreModal').val() !="" 
+      	//&& $('#txtmaqImagenModal').val() != "" 
+      	&& $('#txtmaqCodigoModal').val() != ""
+      	&& $('#txtmaqDescripcionModal').val() !="" 
+      	&& $('#txtmaqObservacionModal').val() !="" ){ 
 		$.ajax({
 			url: '../controlador/gimnasios/ctrlModificarMaquina.php',
 			type: 'POST',
@@ -59,19 +68,16 @@ $(document).ready(function() {
 		.done(function(json) {
 			console.log("success");
 			listarMaquina();
-			$.ambiance({
-				message: "Maquina Modificada con exito",
-				title: json.mensaje,
-				type:"primary",
-				timeout:10,
-	        });	
 			$('#crearMaquinaFrm').trigger("reset");
+			 M.toast({html: 'Máquina Modificada con exito!'})
 		})
 
 		.fail(function(json) {
 			console.log(json);
 		})
-		
+		}else{
+      		M.toast({html: 'Por favor complete los campos'})
+     	}
 	});
 
 	
@@ -86,7 +92,7 @@ $(document).ready(function() {
 			data: null,
 		})
 		.done(function(json) {
-			var tabla;
+			var tabla = "";
 			$.each(json.array, function(index, maquina) {
 			tabla +='<tr>';
 		    tabla +='<td>'+maquina.maqNombre+'</td>';
@@ -143,19 +149,14 @@ $(document).ready(function() {
 		           
 		           .done(function(json) {
 		           	console.log("success");
-		           	console.log(json.exito);
-		           	console.log(json.mensaje);
-		           	$.ambiance({
-						message: "Maquina eliminada con exito",
-						title: json.mensaje,
-						type:"error",
-						timeout:10,
-					});
 		           	listarMaquina();
+			 		M.toast({html: 'Máquina Eliminada con exito!'})
+		           	
 		           })
 		           .fail(function(retorno) {
 		           	console.log(retorno);
 		           	console.log("error");
+		           	listarMaquina();
 		           })
 		});
 		listarMaquina();

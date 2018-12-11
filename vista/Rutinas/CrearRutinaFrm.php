@@ -1,30 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Crear Rutina</title>
 	<link rel="stylesheet" type="text/css" href="../../css/Librerias/bitnami.css">
 	<link rel="stylesheet" type="text/css" href="../../css/Librerias/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="../../css/Rutinas/frmCrearRutina.css">
-</head>
-<body>
-	
-<header>
-	
-</header>
 
-<nav>
-   <!-- Fixed Masonry Filters -->
-   <div class="categories-wrapper z-depth-4">
-   <div class="categories-container">
-       <ul class="categories container">
-       		<img src="../../img/Rutinas/ebg.png" class="logo right">
-           <li class="active"><a href="#all"></a></li>
-       </ul>
-   </div>
-   </div>
-</nav>
-
-	
 	<div class="container " id="contenido">
 		&nbsp
 		<div class="card">
@@ -69,41 +46,6 @@
 		</div>
 	</div>
 	
-
-	  <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Energy Body Gym</h5>
-               
-              </div>
-             
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-    			    <a href="http://www.sena.edu.co/" target="_blank" class="grey-text text-lighten-4 left">
-       				  <h6>&nbsp;&nbsp;© ADSI 1466435</h6>
-      			  </a>
-
-          		<a href="http://www.sena.edu.co/" target="_blank" class="grey-text text-lighten-4 right">
-       					<img src="../../img/Rutinas/logo.png" width="40px" height="40px">
-       				</a>
-              
-              &nbsp;
-
-       			  <a href="http://oferta.senasofiaplus.edu.co/" target="_blank" class="grey-text text-lighten-4 right">
-       					<img src="../../img/Rutinas/developers-V2.png" width="55px" height="46px">
-      			  </a>
-            </div>
-          </div>
-        </footer>
-
-
-
-
 	<script type="text/javascript" src="../../js/Librerias/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../../js/Rutinas/frmCrearRutina.js"></script>
-	<script type="text/javascript" src="../../js/Librerias/materialize.min.js"></script>
-</body>
-</html>
+

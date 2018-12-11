@@ -1,5 +1,5 @@
 <?php 
-
+	session_start();
 	/**
 	 * 
 	 */
@@ -16,37 +16,25 @@
 		} 
 		function ConsultarAprendizRutina(){
 			try {
-			$consulta = "SELECT  ejerciciomusculo.ejmDescripcion,ejerciciomusculo.ejmFoto, musculo.idClasificacionMusculo,musculo.musNombre FROM ejerciciomusculo INNER JOIN musculo ON ejerciciomusculo.idMusculo = musculo.idMusculo INNER JOIN clasificacionmusculo ON musculo.idClasificacionMusculo = clasificacionmusculo.idClasificacionMusculo WHERE clasificacionmusculo.idClasificacionMusculo = 1 AND  ejerciciomusculo.estado = 'A'";
+		$id = $_SESSION['idUsuario'];
+		$consulta = "
+			SELECT rutina.rutNombre,ejercicio.ejeNombre,ejercicio.ejeDetalles,ejercicio.ejeImagen,seriesrepeticiones.series,seriesrepeticiones.repeticiones,seriesrepeticiones.tiempo,dia.diaNombre
+			FROM
+			registrogimnasio
+			INNER JOIN valoracion on  valoracion.idRegistroGimnasio = registrogimnasio.idRegistroGimnasio
+			INNER JOIN valoracionrutina ON valoracionrutina.idValoracion = valoracion.idValoracion
+			INNER JOIN seriesrepeticiones ON seriesrepeticiones.idValoracionRutina = valoracionrutina.idValoracionRutina
+			INNER JOIN rutina ON rutina.idRutina = valoracionrutina.idRutina
+			INNER JOIN rutinaejercicio ON rutinaejercicio.idRutina = rutina.idRutina
+			INNER JOIN ejerciciomusculo ON ejerciciomusculo.idEjercicioMusculo =  rutinaejercicio.idEjercicio
+			INNER JOIN ejercicio ON ejercicio.idEjercicio = ejerciciomusculo.idEjercicio
+	        INNER JOIN dia ON dia.idDia = valoracionrutina.idDia
+			WHERE registrogimnasio.idUsuario = $id";
 			$resultado = $this->conexion->query($consulta);
 			$this->retorno->datos = $resultado;
 			$this->retorno->mensaje = "Consulto";
 			}catch (PDOException $e) {
 			$this->retorno->datos = null;
-			$this->retorno->mensaje= "Error: " .$e->getMessage();	
-			}
-			return $this->retorno;
-		}
-	
-		function ConsultarEspaLda(){
-			try {
-			$consulta = "SELECT  ejerciciomusculo.ejmDescripcion,ejerciciomusculo.ejmFoto, musculo.idClasificacionMusculo,musculo.musNombre FROM ejerciciomusculo INNER JOIN musculo ON ejerciciomusculo.idMusculo = musculo.idMusculo INNER JOIN clasificacionmusculo ON musculo.idClasificacionMusculo = clasificacionmusculo.idClasificacionMusculo WHERE clasificacionmusculo.idClasificacionMusculo = 2 AND  ejerciciomusculo.estado = 'A'";
-			$resultado1 = $this->conexion->query($consulta);
-			$this->retorno->datos1 = $resultado1;
-			$this->retorno->mensaje = "Consulto";
-			}catch (PDOException $e) {
-			$this->retorno->datos1 = null;
-			$this->retorno->mensaje= "Error: " .$e->getMessage();	
-			}
-			return $this->retorno;
-		}
-		function ConsultarPiernas(){
-			try {
-			$consulta = "SELECT  ejerciciomusculo.ejmDescripcion,ejerciciomusculo.ejmFoto, musculo.idClasificacionMusculo,musculo.musNombre FROM ejerciciomusculo INNER JOIN musculo ON ejerciciomusculo.idMusculo = musculo.idMusculo INNER JOIN clasificacionmusculo ON musculo.idClasificacionMusculo = clasificacionmusculo.idClasificacionMusculo WHERE clasificacionmusculo.idClasificacionMusculo = 3 AND ejerciciomusculo.estado = 'A'";
-			$resultado2 = $this->conexion->query($consulta);
-			$this->retorno->datos2 = $resultado2;
-			$this->retorno->mensaje = "Consulto";
-			}catch (PDOException $e) {
-			$this->retorno->datos2 = null;
 			$this->retorno->mensaje= "Error: " .$e->getMessage();	
 			}
 			return $this->retorno;
