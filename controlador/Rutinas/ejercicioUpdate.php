@@ -16,7 +16,7 @@ error_reporting(1);
   $ejercicioE->setEjeDetalle($_POST['txtDetallesModificar']);
 
   if($_FILES['filesModificar']['tmp_name']!=""){
-    $uploads_dir='../../img/Rutinas/imgEjercicios';
+    $uploads_dir='../../img/Rutinas/Ejercicios';
     $tmp_name= $_FILES["filesModificar"]["tmp_name"];
     $name= basename($_FILES["filesModificar"]["name"]);
     move_uploaded_file($tmp_name, "$uploads_dir/$name");

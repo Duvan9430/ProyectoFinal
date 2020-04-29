@@ -24,7 +24,7 @@ $(document).ready(function() {
 			tablaPecho +='<div class="col s4">';
 			tablaPecho +='<div class="card"> ';
 			tablaPecho += '<div class="card-image waves-effect waves-block waves-light">';
-			tablaPecho += '<img class="activator" <img src="../img/'+val.ejeFoto+'" width="380px" height="250px">';
+			tablaPecho += '<img class="activator" <img src="../img/'+val.ejeImagen+'" width="380px" height="250px">';
 			 tablaPecho += '</div>';
 			tablaPecho +=  '<div class="card-content">';
 			tablaPecho += '<span class="card-title activator grey-text text-darken-4">'+val.ejeNombre+'<i class="material-icons right">more_vert</i></span>';
@@ -58,7 +58,7 @@ $(document).ready(function() {
 			TablaEspalda +='<div class="col s4">';
 			TablaEspalda +='<div class="card"> ';
 			TablaEspalda += '<div class="card-image waves-effect waves-block waves-light">';
-			TablaEspalda += '<img class="activator" <img src="../img/'+val.ejeFoto+'" width="380px" height="250px">';
+			TablaEspalda += '<img class="activator" <img src="../img/'+val.ejeImagen+'" width="380px" height="250px">';
 			TablaEspalda += '</div>';
 			TablaEspalda +=  '<div class="card-content">';
 			TablaEspalda += '<span class="card-title activator grey-text text-darken-4">'+val.ejeNombre+'<i class="material-icons right">more_vert</i></span>';
@@ -93,7 +93,7 @@ $(document).ready(function() {
 			Tablapiernas +='<div class="col s4">';
 			Tablapiernas +='<div class="card">';
 			Tablapiernas += '<div class="card-image waves-effect waves-block waves-light">';
-			Tablapiernas += '<img class="activator" <img src="../img/'+val.ejmFoto+'" width="380px" height="250px">';
+			Tablapiernas += '<img class="activator" <img src="../img/'+val.ejeImagen+'" width="380px" height="250px">';
 			Tablapiernas += '</div>';
 			Tablapiernas +=  '<div class="card-content">';
 			Tablapiernas += '<span class="card-title activator grey-text text-darken-4">'+val.ejeNombre+'<i class="material-icons right">more_vert</i></span>';

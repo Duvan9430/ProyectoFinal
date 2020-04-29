@@ -195,7 +195,7 @@
 					<div class="col s12">
 					<div class="input-field col s4">
 					 	<i class="material-icons prefix">wb_auto</i>
-							<input type="text" name="txtIdTorneoModal" id="txtIdTorneoModal">
+							<input type="text" name="txtIdTorneoModal" id="txtIdTorneoModal" hidden>
 			 		</div>
 					<div class="input-field col s4">
 						<i class="material-icons prefix">wb_auto</i>

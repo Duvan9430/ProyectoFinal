@@ -15,7 +15,7 @@
 	<div id="Pecho" class="col s12">
 		<div class="container">
 			<div class="row">
-					<div id="TablaPecho">
+					<div id="TablaPecho" style="font-size: 12px">
 					</div>
 				</div>
 		</div>

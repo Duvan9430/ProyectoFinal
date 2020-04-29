@@ -4,6 +4,8 @@
 
    $retorno= array();
 
+   error_reporting(0);
+
 	$mdlReporte = new mdlGenerarReportes();
 
 	$resultado= $mdlReporte->consultarMaquinaPersonalizada($_POST["selectMaquina"],$_POST["textMaquina"]);

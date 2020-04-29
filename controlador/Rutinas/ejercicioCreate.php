@@ -18,7 +18,7 @@ $file = $_FILES['files'];
 
 
 $ejercicioM = new EjercicioM();
-if (move_uploaded_file($_FILES['files']['tmp_name'], '../../img/Rutinas/imgEjercicios/'.$_POST['txtEjeNombre'].'.jpg')) {
+if (move_uploaded_file($_FILES['files']['tmp_name'], '../../img/Rutinas/Ejercicios/'.$_POST['txtEjeNombre'].'.jpg')) {
 	$retorno['mensaje'] = $ejercicioM->Create($ejercicioE);
 
 	unset($ejercicioE);

@@ -50,6 +50,21 @@ class TorneoM
 	        $this->retorno->mensaje = "Error: " .$e->getMessage();
 		}
 	return $this->retorno;
+	}	
+	public function readTorneoPrincipal()
+	{
+		try{
+			$sentenciaSQL = "SELECT * FROM torneo INNER JOIN clasificaciontorneo ON torneo.idClasificacionTorneo=clasificaciontorneo.idClasificacionTorneo INNER JOIN disciplina ON torneo.idDisciplina=disciplina.idDisciplina INNER JOIN lugar ON torneo.idLugar=lugar.idLugar INNER JOIN generotorneo ON torneo.idGeneroTorneo=generotorneo.idGeneroTorneo INNER JOIN tipoeliminatoria ON torneo.idTipoEliminatoria=tipoEliminatoria.idTipoEliminatoria WHERE torneo.estado='A'";
+	        $resultado = $this->miConexion->query($sentenciaSQL);
+	        $this->retorno->estado = true;
+	        $this->retorno->datos = $resultado;
+	        $this->retorno->mensaje = "Datos del torneo.";
+		}catch(PDOException $e){
+			$this->retorno->estado = false;
+	        $this->retorno->datos = null;
+	        $this->retorno->mensaje = "Error: " .$e->getMessage();
+		}
+	return $this->retorno;
 	}
 	public function readModal($id)
 	{

@@ -16,7 +16,7 @@ $ejercicioMusculoE->setIdEjercicio($_POST['sltEjercicioEditar']);
 $ejercicioMusculoE->setEjmDescripcion($_POST['txtEjmDescripcionMod']);
 
 if($_FILES['imagenModificar']['tmp_name']!=""){
-$uploads_dir='../img';
+$uploads_dir='../../img/Rutinas/Ejercicios/';
 $tmp_name= $_FILES["imagenModificar"]["tmp_name"];
 $name= basename($_FILES["imagenModificar"]["name"]);
 move_uploaded_file($tmp_name, "$uploads_dir/$name");

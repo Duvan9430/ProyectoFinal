@@ -1,9 +1,9 @@
 <?php session_start(); ?>
 <div>
 	<style type="text/css">
-	.tar{
-		float: left;
-	}
+		.tar{
+			float: left;
+		}
 	</style>
 	<div class="container">
 	    <div class="card-body col s12">
@@ -28,7 +28,7 @@
 		</ul>
 	</div>
 	&nbsp;
-	<div class="row" style="margin-left: 7%" >
+	<div class="row" style="margin-left: 6%;">
 		<div class="tajetica1 tar">
 			<img src="../img/verde.PNG" alt="" class="responsive-img">
 		</div>
@@ -38,7 +38,6 @@
 		<div class="tajetica3 tar">
 			<img src="../img/ver.PNG" alt="" class="responsive-img">
 		</div>
-	</div>
 </div>
 <script type="text/javascript">
 	$('.slider').slider({

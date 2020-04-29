@@ -1,5 +1,4 @@
-	<meta charset="UTF-8">
-	<title>Adicionar Maquinas</title>
+
   	<link rel="stylesheet" href="../css/Librerias/materialize.min.css">
 	<link rel="stylesheet" href="../css/Librerias/bitnami.css">
   	<link rel="stylesheet" type="text/css" href="../css/Librerias/jquery.ambiance.css">

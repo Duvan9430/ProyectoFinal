@@ -4,6 +4,7 @@
 	require_once '../../entidad/Rutinas/RutinaE.php';
 	require_once '../../modelo/Rutinas/RutinaM.php';
 
+
 	$retorno = array('array', 'mensaje', 'estado');
 
 	error_reporting(1);

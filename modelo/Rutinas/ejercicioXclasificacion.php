@@ -16,7 +16,7 @@
 		}
 		function EjercicioEspalda(){
 			try {
-			$consulta = "SELECT * FROM ejercicio AS E INNER JOIN ejerciciomusculo AS EM
+			$consulta = "SELECT distinct * FROM ejercicio AS E INNER JOIN ejerciciomusculo AS EM
                       ON E.idEjercicio=EM.idEjercicio
                       INNER JOIN musculo AS M ON EM.idMusculo=M.idMusculo
                       WHERE EM.estado='A'
@@ -32,7 +32,7 @@
 		}
     function EjercicioPecho(){
 			try {
-			$consulta = "SELECT * FROM ejercicio AS E INNER JOIN ejerciciomusculo AS EM
+			$consulta = "SELECT distinct * FROM ejercicio AS E INNER JOIN ejerciciomusculo AS EM
                       ON E.idEjercicio=EM.idEjercicio
                       INNER JOIN musculo AS M ON EM.idMusculo=M.idMusculo
                       WHERE EM.estado='A'
@@ -48,7 +48,7 @@
 		}
     function EjercicioPierna(){
 			try {
-			$consulta = "SELECT * FROM ejercicio AS E INNER JOIN ejerciciomusculo AS EM
+			$consulta = "SELECT distinct * FROM ejercicio AS E INNER JOIN ejerciciomusculo AS EM
                       ON E.idEjercicio=EM.idEjercicio
                       INNER JOIN musculo AS M ON EM.idMusculo=M.idMusculo
                       WHERE EM.estado='A'

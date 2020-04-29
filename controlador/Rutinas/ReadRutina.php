@@ -2,6 +2,7 @@
 
 	require_once '../../modelo/Conexion.php';
 	require_once '../../modelo/Rutinas/RutinaM.php';
+	require_once '../../modelo/Rutinas/RutinasM.php';
 
 	$retorno = array('array', 'mensaje', 'estado');
 

@@ -6,7 +6,7 @@
 	    		<div class="col s6">
 	      			<div class="card">
 	        			<div class="card-image">
-	          				<a title="Maquinas" id="imgCrearMaquina" name="imgCrearMaquina"><img src="../Img/maquinas1.jpg"/></a>
+	          				<a title="Maquinas" id="imgCrearMaquina" name="imgCrearMaquina"><center><img src="../img/maquinas.jpg" style="width: 70%; height: 50%"/></center></a>
 	        			</div>
 	        			<div class="card-action">
 	          				<center><a class="btn botonMenu" id="btnMaquinaF" name="btnMaquinaF">Maquinas</a></center>
@@ -16,7 +16,7 @@
 	    		<div class="col s6">
 	      			<div class="card">
 	        			<div class="card-image">
-	          				<a title="Gimnasio"><img src="../Img/maquinas2.jpg"/></a>
+	          				<a title="Gimnasio"><center><img src="../img/gimnasio.jpg" style="width: 70%; height: 50%"/></center></a>
 	        			</div>
 	        			<div class="card-action">
 	          				<center><a class="btn botonMenu" id="btnGimnasioF" name="btnGimnasioF">Gimnasios</a></center>

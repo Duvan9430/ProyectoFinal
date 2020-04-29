@@ -198,7 +198,7 @@ $(document).ready(function() {
 				tabla += 	'<td>'+val.tieNombre+'</td>';
 				tabla += 	'<td>'+val.ejeNombre+'</td>';
 				tabla += 	'<td>'+val.ejeDetalles+'</td>';
-				tabla += 	'<td><img width=80px, height=50px, src="../img/Rutinas/imgEjercicios/'+val.ejeImagen+'"></td>';
+				tabla += 	'<td><img width=80px, height=50px, src="../img/Rutinas/Ejercicios/'+val.ejeImagen+'"></td>';
 				tabla += 	'<td><a onclick="cargarModalModificar('+val.idEjercicio+')" class="waves-light btn modalMediano-trigger" style="background-color:#fc7323 color: black; font-weight: bold" href="#modalEditar"><i class="material-icons">border_color</i></a>&nbsp;';
 				tabla +=  '<a onclick="cargarModalEliminar('+val.idEjercicio+')" class="waves-light btn modal-trigger" style="background-color:#fc7323 color: black; font-weight: bold" href="#modalEliminar"><i class="material-icons">delete_sweep</i></a></td>';
 				tabla += '</tr>';

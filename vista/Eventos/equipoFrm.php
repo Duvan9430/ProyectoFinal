@@ -88,7 +88,7 @@
 						 	<i class="material-icons prefix">wb_auto</i>
 							</div>
 							<div class="input-field col s5">
-			      				<input type="text" name="txtIdEsquipo" id="txtIdEsquipo">
+			      				<input type="text" name="txtIdEsquipo" id="txtIdEsquipo" hidden>
 						    </div>
 						    <div class="input-field col s3"></div>
 			      	</div>

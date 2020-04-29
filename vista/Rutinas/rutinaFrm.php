@@ -129,7 +129,7 @@
 			</div>
 			<div class="row">
 				<div class="col s12">
-					<input type="text" name="idRutinaM" id="idRutinaM" readonly>
+					<input type="text" name="idRutinaM" id="idRutinaM" readonly hidden>
 				</div>
 			</div>
 			<div class="row">

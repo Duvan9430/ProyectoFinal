@@ -38,7 +38,7 @@
 
 				$this->retorno->datos = $resultado;
 				$this->retorno->estado = true;
-				$this->retorno->mensaje = "Aistencia correcta.";
+				$this->retorno->mensaje = "Asistencia correcta.";
 
 			}catch (Exception $e){  
 				$this->retorno->datos = null;

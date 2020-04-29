@@ -6,7 +6,7 @@
 		    	<div class="col s6">
 		      		<div class="card">
 		        		<div class="card-image">
-		          			<img src="../img/Eventos/torneo.jpg" style="width: 80%; height: 80%">
+		          			<center><img src="../img/Eventos/torneo.jpg" style="width: 80%; height: 80%"></center>
 		        		</div>
 		        		<div class="card-action">
 		          			<center><a class="btn botonMenu" id="btnTorneoF" name="btnTorneoF">Crear Torneo</a></center>
@@ -16,27 +16,27 @@
 		    	<div class="col s6">
 		      		<div class="card">
 		        		<div class="card-image">
-		          			<img src="../img/Eventos/Equipos.png" style="width: 70%; height: 50%">
+		          			<center><img src="../img/Eventos/Equipos.png" style="width: 70%; height: 50%"></center>
 		        		</div>
 		        		<div class="card-action">
 		          			<center><a class="btn botonMenu" id="btnEquipoF" name="btnEquipoF">crear Equipos</a></center>
 		        		</div>
 		      		</div>
 		    	</div>
-		    	<div class="col s6">
+		    	<!--<div class="col s6">
 		      		<div class="card">
 		        		<div class="card-image">
-		          			<img src="../img/Eventos/torneo (1).jpg" style="width: 70%; height: 50%">
+		          			<center><img src="../img/Eventos/torneo (1).jpg" style="width: 70%; height: 50%"></center>
 		        		</div>
 		        		<div class="card-action">
 		          			<center><a class="btn botonMenu" id="btnEliminatoriasF" name="btnEliminatoriasF">Eliminatorias</a></center>
 		        		</div>
 		      		</div>
-		    	</div>
+		    	</div>-->
 		    	<div class="col s6">
 		      		<div class="card">
 		        		<div class="card-image">
-		          			<img src="../img/Eventos/Participante.png" style="width: 70%; height: 70%">
+		          			<center><img src="../img/Eventos/Participante.png" style="width: 70%; height: 70%"></center>
 		        		</div>
 		        		<div class="card-action">
 		          			<center><a class="btn botonMenu" id="btnParticipantesF" name="btnParticipantesF">Registrar Participantes</a></center>
@@ -51,7 +51,7 @@
 				<div class="col s6">
 		      		<div class="card">
 		        		<div class="card-image">
-		          			<img src="../img/Eventos/Equipos.png" style="width: 70%; height: 50%">
+		          			<center><img src="../img/Eventos/Equipos.png" style="width: 70%; height: 50%"></center>
 		        		</div>
 		        		<div class="card-action">
 		          			<center><a class="btn botonMenu" id="btnEquipoF" name="btnEquipoF">crear Equipos</a></center>
@@ -61,7 +61,7 @@
 		    	<div class="col s6">
 		      		<div class="card">
 		        		<div class="card-image">
-		          			<img src="../img/Eventos/Participante.png" style="width: 70%; height: 70%">
+		          			<center><img src="../img/Eventos/Participante.png" style="width: 70%; height: 70%"></center>
 		        		</div>
 		        		<div class="card-action">
 		          			<center><a class="btn botonMenu" id="btnParticipantesF" name="btnParticipantesF">Registrar Participantes</a></center>

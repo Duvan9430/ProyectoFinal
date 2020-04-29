@@ -1,8 +1,14 @@
 <?php 	
 
+<<<<<<< HEAD
 	require_once '../../modelo/Conexion.php';
 	require_once '../../entidad/Rutinas/RutinaE.php';
 	require_once '../../modelo/Rutinas/RutinaM.php';
+=======
+	require_once '../Modelo/Conexion.php';
+	require_once '../Entidad/RutinaE.php';
+	require_once '../Modelo/RutinaM.php';
+>>>>>>> 64b733801de0c4a466f660d5af4ff998e0441df5
 
 	$retorno = array('array', 'mensaje', 'estado');
 

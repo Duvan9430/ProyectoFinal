@@ -200,7 +200,7 @@
           dataType: 'json',
           data: $('#frmMaquina').serialize(),
         })
-        .done(function(retorno) {
+        .always(function(retorno) {
           $('#Maquina').empty();
           var maquina = "";
           enviomaquina = "";
@@ -254,9 +254,7 @@
           });
           $("#textMaquina").val('');
         })
-        .fail(function(retorno) {
-          console.log(retorno);
-        });
+
         
     })
 
